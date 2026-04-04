@@ -5,14 +5,89 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>AfriTalent — contact</title>
  <!-- Bootstrap 5 via CDN : feuille de style -->
- <link
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-rel="stylesheet">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
  <!-- Votre feuille de style personnelle -->
  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
  <!-- Le contenu de la page sera ajoute ici -->
+   <header>
+         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+            
+                <a  class="navbar-brand" href="index.html">AfriTalent</a>
+                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation" >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto">
+            <li class="nav-item"> <a class="nav-link" href="index.html">Accueil</a></li>
+            <li class="nav-item"> <a class="nav-link" href="freelances.html">Freelances</a></li>
+            <li class="nav-item"> <a class="nav-link" href="tarifs.html">Tarifs</a></li>
+             <li class="nav-item"> <a class="nav-link" href="tarifs.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">A propos</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            </div>
+            </div>
+        </nav>
+        </header>
+                    <div class="container my-5">
+                        <h2 class="text-center mb-4"> Contactez-nous</h2>
+                            <div class="row">
+                                 <!--Informations contact à gauche du formulaire-->
+                            <div class=" cold-md-4 mb-4">
+                                <div class="info">
+                                <h4>Nos coordonnées</h4>
+                                <p><strong>Email:</strong> </p>
+                                <p><strong>Téléphone:</strong> contact@afritalent.com</p>
+                                <p><strong>Adresse:</strong>  Dakar, Sénégal</p>
+                            </div>
+                            </div>
+
+                                <!--Formulaire contact à droite-->
+                        <div class="cold-md-8 mb-4">
+                        <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nom</label>
+                            <input type="text" class="form-control" id="name" placeholder="Votre nom" required>
+                        </div>
+                         <div class="mb-3">
+                            <label for="name" class="form-label">Prenom</label>
+                            <input type="text" class="form-control" id="name" placeholder=" Votre prénom">
+                         </div>
+                        <div class="mb-3">
+                         <label for="email" class="form-label">Email</label>
+                        <input type="email"  class="form-control" id="email" placeholder=" Votre email">
+                        </div>
+                         <div class="mb-3">
+                            <label for="subject" class="form-label" >Sujet</label>
+                        <select class="form-select" id="subject">
+                            <option value="">--Choisissez un sujet--</option>
+                            <option value="info">Demande d'information</option>
+                            <option value="projet">proposition de projet</option>
+                            <option value="support">Support technique</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                         </div>
+                         <div class="mb-3">
+                        <textarea id="message"class="form-control" placeholder="Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-warning">Envoyer</button>
+                    </form>
+                    </div>
+                    </div>
+                           <!--Carte Google Maps en dessous-->
+                           <div class="row">
+                            <div class="col-12">
+                                <div class="map-responsive">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.2123456789!2d-17.473123!3d14.692345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec1723f1e9abcdef%3A0x123456789abcdef!2sDakar%2C%20S%C3%A9n%C3%A9gal!5e0!3m2!1sfr!2sfr!4v1698888888888!5m2!1sfr!2sfr">
+                                </div>
+                            </div>
+                           </div>
+
+                    </div>
+                    </div>
  <!-- Bootstrap 5 via CDN : script JavaScript -->
  <script
 src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
