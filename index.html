@@ -12,6 +12,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" >
  <!-- Votre feuille de style personnelle -->
  <link rel="stylesheet" href="css/style.css">
+ <!--variable css dans root-->
+ <link rel="stylesheet" href="css/variable.css">
  </head>
 <body>
  <!-- Le contenu de la page sera ajoute ici -->
@@ -19,7 +21,15 @@
     <header>
          <nav class="navbar navbar-expand-lg navbar-light bg-light ">
             <div class="container">
-                <a  class="navbar-brand" href="index.html">AfriTalent</a>
+                <!--logo-->
+                <a  class="navbar-brand" href="index.html">
+                       <div class="logo">
+                        <div class="logo-rect">
+                            <span class="logo-a">A</span>
+                        </div>
+                        <span class="logo-text">Afri<span class="logo-texte">Talent</span></span>
+                       </div>
+                </a>
                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation" >
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -28,25 +38,26 @@
             <li class="nav-item"> <a class="nav-link active" href="index.html">Accueil</a></li>
             <li class="nav-item"> <a class="nav-link" href="freelances.html">Freelances</a></li>
             <li class="nav-item"> <a class="nav-link" href="tarifs.html">Tarifs</a></li>
-             <li class="nav-item"> <a class="nav-link" href="tarifs.html">Blog</a></li>
+             <li class="nav-item"> <a class="nav-link" href="blog.html">Blog</a></li>
             <li class="nav-item"><a class="nav-link" href="about.html">A propos</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
             </div>
-           <button> <a href="freelances.html" class="btn">Rejoindre AfriTalent</a> </button>
+            <a href="freelances.html" ><button class="btn btn-outline-light m-2">Rejoindre AfriTalent </button></a>
             </div>
         </nav>
         </header>
         <main>
                              <!--HERO-->
 <section class="hero">
-    <div class="container">
+    <div class="overlay"></div>
+    <div class="hero-content">s
     <h1>Bienvenue En AfriTalent tech  </h1>
-    <h2> Trouvez les meilleurs talents tech en Afrique: Developpeurs, designers, Experts IT disponibles </h2>
-    <img src="images/portrait-professional-business-p-2.png" alt="profil">
+    <h2> Trouvez les meilleurs talents tech en Afrique <br> Developpeurs, designers, Experts IT disponibles </h2>
     <button class="btn btn-outline-light m-2">Je suis freelance</button>
     <button class="btn btn-outline-light m-2">Je recrute</button>
     </div>
+</section>
     <section class="stats">
             <div class="card">
                     <h2>+500</h2>
@@ -238,9 +249,9 @@
                     </section>
                                             <!--CTA-->
                      <section class="cta">
-                        <div class="overlay">
+                        <div class="over">
                         <h2 class="fw-bold">Rejoins AfriTalent aujourd'hui</h2>
-                        <button>S'inscrire</button>
+                        <button class="btn btn-outline-light" >S'inscrire</button>
                         </div>
                      </section>
                      </main>
@@ -251,7 +262,14 @@
                             <div class="col-md-3">
                             <h5>AfriTalent</h5>
                             <p>Plateforme freelance tech en Afrique</p>
-                           <img src="images/Logo.jpeg" alt="logo">
+                           <a  class="navbar-brand" href="index.html">
+                       <div class="logo">
+                        <div class="logo-rect">
+                            <span class="logo-a">A</span>
+                        </div>
+                        <span class="logo-text">Afri<span class="logo-texte">Talent</span></span>
+                       </div>
+                </a>
                           </div>
                          <div class="col-md-3">
                            <h5>Liens utiles</h5>

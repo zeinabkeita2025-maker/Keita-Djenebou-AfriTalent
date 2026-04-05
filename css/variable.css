@@ -1,0 +1,72 @@
+    /*les 6+ variables*/
+:root{
+    --color-primary:#d4a017;
+    --color-dark:#1a1a1a;
+    --color-light:#ffffff;
+    --font-main:'Open Sans', sans-serif;
+    --font-title:'Montserrat' sans serif;
+    --spacing-md:8px;
+    --radius:8px;
+}
+a{
+    text-decoration: none;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+}
+body{
+    padding-top: 70px;
+}
+
+    /*logo commun pour toutes les pages*/
+/*container du logo*/
+.logo{
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', Arial, sans serif ;
+}
+/*Rectangle jaune pour le A*/
+.logo-rect{
+    width:50px;
+    height: 50px; 
+    background-color: #d4a017;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+/*A dans le rectangle*/
+.logo-a{
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+}
+/*text Afritalent*/
+.logo-text{
+    color: #1a1a1a;
+    font-weight: 600;
+    font-size: 20px;
+}
+.logo-texte{
+    color: #d4a017;
+}
+/*les liens nav*/
+.nav-link{
+    position: relative;
+    transition: 0.3s;
+    color: #1a1a1a;
+}
+.nav-link:focus{
+     color: #d4a017;
+}
+.nav-link:hover{
+    color: #d4a017 ;
+}
+
+.btn{
+    background-color: #d4a017;
+    padding: 10px 10px ;
+    border-radius: 10px;
+}

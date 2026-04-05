@@ -1,0 +1,63 @@
+
+/* les variables CSS dans root*/
+body{
+    background-color: var(--color-light);
+    font-family: var(--font-main);
+}
+.navbar{
+    background-color: var(--color-light);
+    padding: var(--spacing-md);
+}
+.btn{
+    background-color: var(--color-primary);
+    border: var(--radius);
+}
+h1, h2, h3, h4, h5{
+     font-family: var(--font-title);
+}
+.pricing{
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.text-center{
+     margin-top: 30px;
+}
+.card{
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    border-radius:10px;
+}
+.popular{
+    border: 2px solid #007bff;
+    transform: scale(1.05);
+}
+.badge{
+    background: #007bff;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+ul{
+    list-style: none;
+}
+.mb-4{
+    color: #FFD700;
+}
+.accordion-item{
+    background-color: #1c1c1c ; border:1px solid #333;
+}
+.accordion-button{
+    background-color: #333;
+    color: #FFD700;
+    font-weight: bold;
+}
+.accordion-collapse{
+    color: #fff;
+}
+.accordion-body{
+color: #fff;
+}
