@@ -38,12 +38,12 @@
             <li class="nav-item"> <a class="nav-link active" href="index.html">Accueil</a></li>
             <li class="nav-item"> <a class="nav-link" href="freelances.html">Freelances</a></li>
             <li class="nav-item"> <a class="nav-link" href="tarifs.html">Tarifs</a></li>
-             <li class="nav-item"> <a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item"> <a class="nav-link" href="blog.html">Blog</a></li>
             <li class="nav-item"><a class="nav-link" href="about.html">A propos</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
             </div>
-            <a href="freelances.html" ><button class="btn btn-outline-light m-2">Rejoindre AfriTalent </button></a>
+            <a href="freelances.html"><button class="btn btn-outline-light m-2">Rejoindre AfriTalent </button></a>
             </div>
         </nav>
         </header>
@@ -51,14 +51,16 @@
                              <!--HERO-->
 <section class="hero">
     <div class="overlay"></div>
-    <div class="hero-content">s
+    <div class="hero-content">
     <h1>Bienvenue En AfriTalent tech  </h1>
     <h2> Trouvez les meilleurs talents tech en Afrique <br> Developpeurs, designers, Experts IT disponibles </h2>
     <button class="btn btn-outline-light m-2">Je suis freelance</button>
     <button class="btn btn-outline-light m-2">Je recrute</button>
     </div>
+    <img src="" class="hero" alt="">
 </section>
-    <section class="stats">
+    <section class="stats-container">
+        <div class="stats">
             <div class="card">
                     <h2>+500</h2>
                     <P>Freelances</P>
@@ -71,7 +73,8 @@
                     <h2>+12000</h2>
                     <P>missions</P>
                 </div>
-            <div>
+                </div>
+            <div class="image-box">
             <img src="images/Immeuble-Abuja.jpg" alt="entreprises">
             </div>
     </section>
@@ -79,179 +82,191 @@
     </div>
 </section>
     <!--Comment ca marche-->
-    <section class="how-it-works">
+    <section id="comment ca marche" class="how-it-works">
         <h2>Comment ca marche</h2>
-        <div class="bento-grid">
-        <div class="card-large">
-            <span>1</span>
+        <div class="grid-trailers">
+        <div class="trailer left">
+            <span class="step-number">1</span>
+            <div class="icon">✍️</div>
             <h3>Crée ton compte rapidement</h3>
             <P>Inscrivez-vous gratuitement et completez votre profil</P>
         </div>
-        <div class="card">
-            <span>2</span>
+        <div class="trailer middle-top">
+            <span class="step-number">2</span>
+            <div class="icon">🧑‍💻</div>
             <h3>Publier un projet</h3>
             <P>Décrivez votre besoin en quelques lignes</P>
         </div>
-       <div class="card">
-            <span>3</span>
+       <div class="trailer middle-bottom">
+            <span class="step-number">3</span>
+            <div class="icon">💼</div>
             <h3>Choisir un freelance</h3>
             <P>Comparez les profils et sélectionner le meilleur</P>
         </div>
-        <div class="card-wide">
-            <span>4</span>
+        <div class="trailer right-top">
+            <span class="step-number">4</span>
+            <div class="icon">🤝</div>
             <h3>Collaborer</h3>
             <P>Travailler ensemble et recevez votre projet</P>
         </div>
+        <div class="trailer right-bottom">
+            <span class="step-number">5</span>
+            <div class="icon">💰</div>
+            <h3>Reception de paiement</h3>
+            <P>Recois tes paiements en toute securité après la validation du projet</P>
+        </div>
     </section>
         <!--Categories-->
-        <section class="Catégories">
+        <section  id="Catégories"   class="Catégories">
                 <h2>Catégories de services</h2>
             <div class="category-grid">
-
                 <div class="cat-card">
-                       <h3>💻Développement Web </h3>
+                     <div class="icon">💻</div>
+                       <h3>Développement Web </h3>
                        <P>120 Freelances</P>
                     </div>
-                </div>
                 <div class="cat-card">
-                       <h3> 🎨Design UI/UX </h3>
+                     <div class="icon">🎨</div>
+                       <h3> Design UI/UX </h3>
                        <p>80 Freelances</p>
                     </div>
-                </div>
+                
                 <div class="cat-card">
-                       <H3> 📈Marketing Digital</H3>
+                    <div class="icon">📈</div>
+                       <H3> Marketing Digital</H3>
                        <p>95 Freelances</p>
                     </div>
-                </div>
                 <div class="cat-card">
-                        <h3>🤖DATA & IA</h3>
+                    <div class="icon">🤖</div>
+                        <h3>DATA & IA</h3>
                         <p>60 Freelances</p>
                     </div>
-                </div>
                 <div class="cat-card">
-                      <h3>✍️ Rédaction tech</h3>
+                     <div class="icon">✍️</div>
+                      <h3> Rédaction tech</h3>
                       <p>40 Freelances</p>
                     </div>
-                </div>
                 <div class="cat-card">
-                    <h3>⚙️🔩 DevOpps & Cloud</h3>
+                     <div class="icon">⚙️🔩</div>
+                    <h3> DevOpps & Cloud</h3>
                     <p>50 Freelances</p>
                     </div>
                 </div>
-            </div>
-            </div>
         </section>
                                     <!--Temoignages-->
-                        <section class="testimoniales">
-                        <div class="container"></div>  
+                        <section class="testimoniales py-5">
+                        <div class="container text-center"></div>  
                         <h2 class="text-center mb-5">Témoignages</h2>
-                        <div class="carouselTesti" class="carousel-slide" data-bs-ride="ccarousel">
+                        <div id="testimonialCarousel" class="carousel-slide" data-bs-ride="ccarousel" data-bs-ride="carousel" data-bs-interval="2500" data-bs-pause="hover">
+                            <!--indicateurs-->
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
+                                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+                            </div>
                             <div class="carousel-inner"> 
                                           <!--1slide--> 
                                     <div class="carousel-item active">
-                                    <div class="row text-center">
+                                    <div class="row justify-content-center g-4">
                                             <div class="col-md-4">
-                                            <div class="test-card">
-                                    <img src="images/Serge-1.png" alt="Serge-1" class="rounded-circle">
-                                    <h5>Serge</h5>
-                                    <p>Entrepreneure</p>
-                                     <p> Très bon service, "j'ai trouvé un développeur en 2jours !"</p>
-                                     ⭐⭐⭐⭐⭐
-                                     </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                    <div class="test-card">
-                                    <img src="images/Patrick-1.png" alt="Philip-1" class="rounded-circle">
-                                    <h5>Ali</h5>
-                                    <p>-Freelance</p>
-                                    <p>AfriTalent m'a permis de trouver mes premiers clients.</p>
-                                    ⭐⭐⭐⭐⭐
-                                    </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                    <div class="test-card">
-                                    <img src="images/Philip-1.png" alt="Philip-1" class="rounded-circle">
-                                    <h5>Jean</h5>
-                                    <p>Startup</p>
-                                    <p>"Plateforme simple et efficace</p>
-                                    ⭐⭐⭐⭐⭐
-                                    </div>
-                                    </div>
-                        </div>
-                        </div>
+                                            <div class="testimonial-card">
+                                                <div class="user">
+                                                <img src="images/Serge-1.png" alt="Serge-1">
+                                                 <div>
+                                                 <h5>Serge</h5>
+                                                 <p>Entrepreneure</p>
+                                                 <p> Très bon service, "j'ai trouvé un développeur en 2jours !"</p>   
+                                                 ⭐⭐⭐⭐⭐
+                                                 </div>
+                                            </div>
+                                            </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                            <div class="testimonial-card">
+                                                <div class="user">
+                                            <img src="images/Patrick-1.png" alt="Philip-1">
+                                            <div>
+                                            <h5>Ali</h5>
+                                            <p>-Freelance</p>
+                                            <p>AfriTalent m'a permis de trouver mes premiers clients.</p>
+                                            ⭐⭐⭐⭐⭐
+                                            </div>
+                                            </div>
+                                            </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                            <div class="testimonial-card">
+                                                <div class="user">
+                                            <img src="images/Philip-1.png" alt="Philip-1">
+                                            <div>
+                                            <h5>Jean</h5>
+                                            <p>Startup</p>
+                                            <p>"Plateforme simple et efficace</p>
+                                            ⭐⭐⭐⭐⭐
+                                            </div>
+                                            </div>
+                                            </div>
+                                            </div>
+                                            </div>
+                                            </div>
                                             <!--2slide-->
-                                                 <div class="carousel-item active">
-                                    <div class="row text-center">
+                                     <div class="carousel-item ">
+                                      <div class="row justify-content-center g-4">
                                             <div class="col-md-4">
-                                            <div class="test-card">
-                                    <img src="images/Serge-1.png" alt="Serge-1" class="rounded-circle">
+                                            <div class="testimonial-card">
+                                                <div class="user">
+                                    <img src="images/Serge-1.png" alt="Serge-1" >
+                                    <div>
                                     <h5>Serge</h5>
                                     <p>Entrepreneure</p>
                                      <p> Très bon service, "j'ai trouvé un développeur en 2jours !"</p>
                                      ⭐⭐⭐⭐⭐
                                      </div>
                                     </div>
+                                    </div>
+                                    </div>
                                     <div class="col-md-4">
-                                    <div class="test-card">
-                                    <img src="images/Patrick-1.png" alt="Philip-1" class="rounded-circle">
+                                    <div class="testimonial-card">
+                                        <div class="user">
+                                    <img src="images/Patrick-1.png" alt="Philip-1">
+                                    <div>
                                     <h5>Ali</h5>
                                     <p>-Freelance</p>
                                     <p>AfriTalent m'a permis de trouver mes premiers clients.</p>
                                     ⭐⭐⭐⭐⭐
                                     </div>
                                     </div>
+                                    </div>
+                                    </div>
                                     <div class="col-md-4">
-                                    <div class="test-card">
-                                    <img src="images/Philip-1.png" alt="Philip-1" class="rounded-circle">
+                                    <div class="testimonial-card">
+                                        <div class="user">
+                                    <img src="images/Philip-1.png" alt="Philip-1" >
+                                    <div>
                                     <h5>Jean</h5>
                                     <p>Startup</p>
                                     <p>"Plateforme simple et efficace</p>
                                     ⭐⭐⭐⭐⭐
                                     </div>
                                     </div>
-                        </div>
-                        </div>
-                                            <!--3slide-->
-                                             <div class="carousel-item active">
-                                    <div class="row text-center">
-                                            <div class="col-md-4">
-                                            <div class="test-card">
-                                    <img src="images/Serge-1.png" alt="Serge-1" class="rounded-circle">
-                                    <h5>Serge</h5>
-                                    <p>Entrepreneure</p>
-                                     <p> Très bon service, "j'ai trouvé un développeur en 2jours !"</p>
-                                     ⭐⭐⭐⭐⭐
-                                     </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                    <div class="test-card">
-                                    <img src="images/Patrick-1.png" alt="Philip-1" class="rounded-circle">
-                                    <h5>Ali</h5>
-                                    <p>-Freelance</p>
-                                    <p>AfriTalent m'a permis de trouver mes premiers clients.</p>
-                                    ⭐⭐⭐⭐⭐
                                     </div>
                                     </div>
-                                    <div class="col-md-4">
-                                    <div class="test-card">
-                                    <img src="images/Philip-1.png" alt="Philip-1" class="rounded-circle">
-                                    <h5>Jean</h5>
-                                    <p>Startup</p>
-                                    <p>"Plateforme simple et efficace</p>
-                                    ⭐⭐⭐⭐⭐
-                                    </div>
-                                    </div>
-                        </div>
-                        </div>
-                        </div>
-                        </div>
-                        </div>
-                    </section>
+                                </div>
+                                </div>  
+                                       <!--control-->
+                                    <button class="carousel-control-prev" type="button"data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>  
+                                    </button>    
+                                    <button class="carousel-control-next" type="button"data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>  
+                                    </button>  
+                            </div>
+                            </div>             
+                        </section>
                                             <!--CTA-->
                      <section class="cta">
-                        <div class="over">
+                        <div class="cta-container">
                         <h2 class="fw-bold">Rejoins AfriTalent aujourd'hui</h2>
-                        <button class="btn btn-outline-light" >S'inscrire</button>
+                        <a href="contact.html"><button class="btn btn-outline-light">S'inscrire</button></a>
                         </div>
                      </section>
                      </main>

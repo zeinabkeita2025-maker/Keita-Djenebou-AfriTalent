@@ -2,6 +2,7 @@
 body{
     background-color: var(--color-light);
     font-family: var(--font-main);
+    background-color: moccasin;
 }
 .navbar{
     background-color: var(--color-light);

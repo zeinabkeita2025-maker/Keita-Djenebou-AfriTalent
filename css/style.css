@@ -2,10 +2,15 @@
 body{
     background-color: var(--color-light);
     font-family: var(--font-main);
+    z-index: 1;
 }
 .navbar{
     background-color: var(--color-light);
     padding: var(--spacing-md);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 .btn{
     background-color: var(--color-primary);
@@ -13,4 +18,299 @@ body{
 }
 h1, h2, h3, h4, h5{
      font-family: var(--font-title);
+}
+/*section*/
+.hero{
+    background-image: url('../images/Johannesburg bac.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 80px;
+   color: aliceblue;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,40,80,0.6);/*effet bleu sombre*/
+    z-index: 1;
+    pointer-events: none;
+}
+.hero-content{
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+}
+.hero-content h1{
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.hero-content h2{
+    font-size: 18px;
+    line-height: 1.6;
+}
+.hero-shape{
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    width: 400px;
+    opacity: 0.6;
+    z-index: 2;
+}
+/*sections cartes statistique +image*/
+.stats-container{
+    background: linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 50px;
+    overflow: hidden; /*bloque le débordement*/
+}
+.stats{
+    flex: 0 0 30%;
+     position: relative;
+     z-index: 1;
+}
+.card{
+    background:  #d4a017;
+    color: white;
+    padding: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.card h2{
+    margin: 0;
+    font-size: 28px;
+    font-weight:bold;
+}
+.card p{
+    margin-top: 10px;
+    font-size: 14px;
+}
+.card:hover{
+    transform: translateY(-5px);
+    transition: 0.5s;
+}
+.image-box{
+    flex: 0 0 70%;
+}
+.image-box img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;/*evite la déformation de l'image*/
+    border-radius:12px;
+}
+/*section comment ca marche*/
+.how-it-works{
+    padding: 50px 20px;
+    background-color: #f9f7f1;
+    text-align: center;
+}
+.grid-trailers{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr; /*gauche large milieu et droite petite*/
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;  /*ecart horizontal et vertical entre les cartes*/
+    grid-template-areas:
+     "left middle-top right-top" 
+     "left middle-bottom right-bottom";
+}
+/*Attribuer les zones*/
+.left{
+    grid-area: left;
+}
+.middlle-top{
+    grid-area: middle-top;
+}
+.middle-bottom{
+    grid-area: middle-bottom;
+}
+.right-top{
+    grid-area:right-top;
+}
+.right-bottom{
+    grid-area: right-bottom;
+}
+/*style pour les cards*/
+.trailer{
+    background-color: #ffef82;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.step-number{
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #fdd835;
+    color: #333;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.grid-trailers .icon{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.trailer h3{
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+.trailer p{
+    font-size: 1rem;
+    line-height: 1.4;
+    text-align: center;
+}
+/*section catégories des  services*/
+.Catégories{
+    padding:50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.Catégories h2{
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+/*Grille responsive*/
+.category-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px), 1fr);
+    gap: 20px;
+}
+/*carte de services*/
+.cat-card{
+    background-color: #ffef82;
+    border-radius: 12px;
+    padding: 25px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+/*icon*/
+.cat-card .icon{
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+/*titres*/
+.cat-card h3{
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.cat-card p{
+    font-size: 1rem;
+    line-height: 1.4;
+    text-align: center;
+}
+/*effet suvol*/
+.cat-card:hover{
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+    background-color: rgba(209, 113, 113, 0.187);
+}
+/*section temoignages*/
+.testimoniales{
+    background: #f9f7f1;
+}
+.testimonial-card{
+    background: #ffef82;
+    padding: 25px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+/*hover effet premium*/
+.testimonial-card:hover{
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+/*texte*/
+.testimonial-card p{
+    font-style: italic;
+    margin-bottom: 20px;
+}
+/*les users*/
+.user{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.user img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fdd835;
+}
+.user p{
+    font-size: 0.85rem;
+    color: #555;
+}
+/*indicateurs points*/
+.carousel-indicators button{
+    background-color: #fdd835;
+}
+/*section CTA*/
+.cta{
+    background: linear-gradient(135deg, #fdd835,#ffef82);
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 20px;
+    margin:auto;
+}
+.cta-container{
+    max-width: 700px;
+    margin: auto;
+}
+.cta p{
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    color: #555;
+}
+.cta-h2{
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    color: #555;
+}
+.cta-btn{
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+/*hover button*/
+.cta-btn:hover{
+    background-color: #000;
+    transform: scale(1.05);
+}
+/*footer*/
+footer{
+    background-color: darkgray;
+}
+a{
+    color:white;
 }

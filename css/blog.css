@@ -5,6 +5,10 @@ body{
 .navbar{
     background-color: var(--color-light);
     padding: var(--spacing-md);
+     position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 .btn{
     background-color: var(--color-primary);
