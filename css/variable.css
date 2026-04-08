@@ -10,13 +10,22 @@
 }
 a{
     text-decoration: none;
+    color: white;
 }
 .navbar{
+    background-color: var(--color-light);
     position: fixed;
     top: 0;
+    padding: 10px 20px;
 }
-body{
-    padding-top: 70px;
+html,body{
+    padding-top: 20px;
+    overflow-x: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
     /*logo commun pour toutes les pages*/
@@ -69,4 +78,39 @@ body{
     background-color: #d4a017;
     padding: 10px 10px ;
     border-radius: 10px;
+}
+/*footer*/
+.foot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+.icon{
+    gap: 15px;
+}
+/*Pour les images*/
+.img{
+    max-width: 100%;
+    height: auto;
+}
+/*Responsive*/
+/*Mobile*/
+.cards{
+    display: flex;
+    flex-direction: column;
+}
+/*tablette*/
+@media(min-width:768px){
+    .cards{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+/*Desktop*/
+@media(min-width:1200px){
+    .container{
+        max-width: 1100px;
+        margin: auto;
+    }
 }

@@ -197,7 +197,7 @@ h1, h2, h3, h4, h5{
 }
 /*carte de services*/
 .cat-card{
-    background-color: #ffef82;
+    background-color:#d4a017 ;
     border-radius: 12px;
     padding: 25px 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -234,7 +234,7 @@ h1, h2, h3, h4, h5{
     background: #f9f7f1;
 }
 .testimonial-card{
-    background: #ffef82;
+    background: #d4a017;
     padding: 25px;
     border-radius: 15px;
     transition: all 0.3s ease;
@@ -261,7 +261,7 @@ h1, h2, h3, h4, h5{
     height: 55px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #fdd835;
+    border: 3px solid #d4a017;
 }
 .user p{
     font-size: 0.85rem;
@@ -269,11 +269,11 @@ h1, h2, h3, h4, h5{
 }
 /*indicateurs points*/
 .carousel-indicators button{
-    background-color: #fdd835;
+    background-color:#d4a017;
 }
 /*section CTA*/
 .cta{
-    background: linear-gradient(135deg, #fdd835,#ffef82);
+    background: linear-gradient(135deg,#d4a017,#bd9636);
     padding: 60px 20px;
     text-align: center;
     border-radius: 20px;
@@ -306,10 +306,6 @@ h1, h2, h3, h4, h5{
 .cta-btn:hover{
     background-color: #000;
     transform: scale(1.05);
-}
-/*footer*/
-footer{
-    background-color: darkgray;
 }
 a{
     color:white;

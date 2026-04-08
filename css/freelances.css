@@ -1,4 +1,5 @@
 /* les variables CSS dans root*/
+
 body{
     background-color: var(--color-light);
     font-family: var(--font-main);
