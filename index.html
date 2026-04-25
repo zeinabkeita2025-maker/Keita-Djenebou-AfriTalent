@@ -17,9 +17,9 @@
  </head>
 <body>
  <!-- Le contenu de la page sera ajoute ici -->
-                    <!--NAVBAR-->
+                    <!-- NAVBAR -->
     <header>
-         <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container">
                 <!--logo-->
                 <a  class="navbar-brand" href="index.html">
@@ -27,7 +27,7 @@
                         <div class="logo-rect">
                             <span class="logo-a">A</span>
                         </div>
-                        <span class="logo-text">Afri<span class="logo-texte">Talent</span></span>
+                        <span class="logo-text">Afri<span class="logo-texte">Talent</span>
                        </div>
                 </a>
                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation" >
@@ -43,21 +43,23 @@
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
             </div>
+            <button id="themeToggle">🌙</button>
             <a href="freelances.html"><button class="btn btn-outline-light m-2">Rejoindre AfriTalent </button></a>
-            </div>
-        </nav>
+          </div>
+          </nav>
         </header>
         <main>
                              <!--HERO-->
 <section class="hero">
     <div class="overlay"></div>
     <div class="hero-content">
-    <h1>Bienvenue En AfriTalent tech  </h1>
-    <h2> Trouvez les meilleurs talents tech en Afrique <br> Developpeurs, designers, Experts IT disponibles </h2>
+    <h1>Bienvenue En AfriTalent tech</h1>
+    <h2> Trouvez les meilleurs talents tech en Afrique <br> Developpeurs, designers, Experts IT disponibles</h2>
     <button class="btn btn-outline-light m-2">Je suis freelance</button>
-    <button class="btn btn-outline-light m-2">Je recrute</button>
-    </div>
-    <img src="" class="hero" alt="">
+    <button class="btn btn-outline-light m-2"id="clair">Je recrute</button>
+    </div>  
+    <div class="Afrique"><img src="images/Afrique-blanc.svg" alt="Afrique">
+      </div> 
 </section>
     <section class="stats-container">
         <div class="stats">
@@ -82,186 +84,217 @@
     </div>
 </section>
     <!--Comment ca marche-->
-    <section id="comment ca marche" class="how-it-works">
-        <h2>Comment ca marche</h2>
-        <div class="grid-trailers">
-        <div class="trailer left">
+        <h2 class="text-center mb-5 text-primary-custom">Comment ca marche</h2>
+    <section class="container my-5" id="comment ca marche">
+        <div class="grid-cards">
+          <div class="left">
+        <div class="custom-card card1">
+          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="ph1">
+          <div class="overlay"></div>
+          <div class="content">
             <span class="step-number">1</span>
-            <div class="icon">✍️</div>
+            <div class="icon"><i class="bi bi-person-plus"></i></div>
             <h3>Crée ton compte rapidement</h3>
             <P>Inscrivez-vous gratuitement et completez votre profil</P>
         </div>
-        <div class="trailer middle-top">
+        </div>
+        </div>
+        <div class="center">
+        <div class=" custom-card card2">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="ph2">
+          <div class="overlay"></div>
+            <div class="content">
             <span class="step-number">2</span>
-            <div class="icon">🧑‍💻</div>
+            <div class="icon"><i class="bi bi-file-earmark-plus"></i></div>
             <h3>Publier un projet</h3>
             <P>Décrivez votre besoin en quelques lignes</P>
         </div>
-       <div class="trailer middle-bottom">
-            <span class="step-number">3</span>
-            <div class="icon">💼</div>
-            <h3>Choisir un freelance</h3>
-            <P>Comparez les profils et sélectionner le meilleur</P>
         </div>
-        <div class="trailer right-top">
+       <div class=" custom-card card3">
+            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" alt="ph3">
+            <div class="overlay"></div>
+            <div class="content">
+            <span class="step-number">3</span>
+            <div class="icon"><i class="bi bi-person-badge"></i></div>
+            <h3>Choisir un freelance</h3>
+            <P>Comparez les profils et sélectionner le meilleur</P> 
+        </div>
+        </div>
+        </div>
+        <div class="right">
+          
+        <div class=" custom-card card4">
+          <div class="small">
+          <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3" alt="ph4">
+          <div class="overlay"></div>
+          <div class="content">
             <span class="step-number">4</span>
-            <div class="icon">🤝</div>
+            <div class="icon"><i class="bi bi-"></i></div>
             <h3>Collaborer</h3>
             <P>Travailler ensemble et recevez votre projet</P>
         </div>
-        <div class="trailer right-bottom">
+        </div>
+        </div>
+        <div class=" custom-card card5">
+          <div class="big">
+          <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80" alt="">
+          <div class="overlay"></div>
+          <div class="content">
             <span class="step-number">5</span>
-            <div class="icon">💰</div>
+            <div class="icon"><i class="bi bi-cash-coin"></i></div>
             <h3>Reception de paiement</h3>
             <P>Recois tes paiements en toute securité après la validation du projet</P>
         </div>
+        </div>
+        </div>
+        </div>
+        </div>
     </section>
-        <!--Categories-->
-        <section  id="Catégories"   class="Catégories">
-                <h2>Catégories de services</h2>
-            <div class="category-grid">
-                <div class="cat-card">
-                     <div class="icon">💻</div>
-                       <h3>Développement Web </h3>
-                       <P>120 Freelances</P>
+                        <!--Categories-->
+        <section  id="Catégories"class="Catégories py-5 bg-light-custom">
+          <div class="container">
+                <h2 class="text-center mb-5 text-primary-custom">Catégories de services</h2>
+            <div class="row g-4">
+                <div class="col-md-4 col-sm-6">
+                  <div class="category-card-img">
+                    <div class="icon"><i class="bi bi-code-slash"></i></div>
+                       <h2 class="cte">Développement Web </h2>
+                       <p class="ct">Sites web, application modernes</px>
+                       <P class="ct">120 Freelances</P>
                     </div>
-                <div class="cat-card">
-                     <div class="icon">🎨</div>
-                       <h3> Design UI/UX </h3>
-                       <p>80 Freelances</p>
                     </div>
-                
-                <div class="cat-card">
-                    <div class="icon">📈</div>
-                       <H3> Marketing Digital</H3>
-                       <p>95 Freelances</p>
+                     <div class="col-md-4 col-sm-6">
+                  <div class="category-card-img">
+                    <div class="icon"><i class="bi bi-palette"></i></div>
+                       <h2 class="cte"> Design UI/UX</h2>
+                       <p class="ct">Designer Pro</p>
+                       <p class="ct">80 Freelances</p>
                     </div>
-                <div class="cat-card">
-                    <div class="icon">🤖</div>
-                        <h3>DATA & IA</h3>
-                        <p>60 Freelances</p>
                     </div>
-                <div class="cat-card">
-                     <div class="icon">✍️</div>
-                      <h3> Rédaction tech</h3>
-                      <p>40 Freelances</p>
+                 <div class="col-md-4 col-sm-6">
+                  <div class="category-card-img">
+                    
+                    <div class="icon"><i class="bi bi-shield-check"></i></div>
+                       <h2 class="cte">Cyber security</h2>
+                       <p class="ct">Non à la cyber crumunalité...</p>
+                       <p class="ct">95 Freelances</p>
                     </div>
-                <div class="cat-card">
-                     <div class="icon">⚙️🔩</div>
-                    <h3> DevOpps & Cloud</h3>
-                    <p>50 Freelances</p>
                     </div>
+                 <div class="col-md-4 col-sm-6">
+                  <div class="category-card-img">
+                     <div class="icon"><i class=" bi bi-robot"></i></div>
+                        <h2 class="cte">DATA & IA</h2>
+                        <p class="ct">Marchine Learning, IA Générative</p>
+                        <p class="ct">60 Freelances</p>
+                        </div>
+                        </div>
+                       
+                 <div class="col-md-4 col-sm-6">
+                  <div class="category-card-img">
+                     <div class="icon"> <i class="bi bi-mortarboard"></i></div>
+                      <h2 class="cte"> Rédaction tech</h2>
+                      <p class="ct">technologie redacter</p>
+                      <p class="ct">40 Freelances</p>
+                    </div>
+                    </div>
+                    
+                <div class="col-md-4 col-sm-6">
+                  <div class="category-card-img">
+                     <div class="icon"><i class="bi bi-cloud"></i></div>
+                    <h2 class="cte"> Marketing Digital</h2>
+                    <p class="ct">community Manager,</p>
+                    <p class="ct">50 Freelances</p>
+                    </div>
+                </div>
+                </div>
                 </div>
         </section>
                                     <!--Temoignages-->
-                        <section class="testimoniales py-5">
-                        <div class="container text-center"></div>  
-                        <h2 class="text-center mb-5">Témoignages</h2>
-                        <div id="testimonialCarousel" class="carousel-slide" data-bs-ride="ccarousel" data-bs-ride="carousel" data-bs-interval="2500" data-bs-pause="hover">
-                            <!--indicateurs-->
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
-                                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
-                            </div>
-                            <div class="carousel-inner"> 
-                                          <!--1slide--> 
-                                    <div class="carousel-item active">
-                                    <div class="row justify-content-center g-4">
-                                            <div class="col-md-4">
-                                            <div class="testimonial-card">
-                                                <div class="user">
-                                                <img src="images/Serge-1.png" alt="Serge-1">
-                                                 <div>
-                                                 <h5>Serge</h5>
-                                                 <p>Entrepreneure</p>
-                                                 <p> Très bon service, "j'ai trouvé un développeur en 2jours !"</p>   
-                                                 ⭐⭐⭐⭐⭐
-                                                 </div>
-                                            </div>
-                                            </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                            <div class="testimonial-card">
-                                                <div class="user">
-                                            <img src="images/Patrick-1.png" alt="Philip-1">
-                                            <div>
-                                            <h5>Ali</h5>
-                                            <p>-Freelance</p>
-                                            <p>AfriTalent m'a permis de trouver mes premiers clients.</p>
-                                            ⭐⭐⭐⭐⭐
-                                            </div>
-                                            </div>
-                                            </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                            <div class="testimonial-card">
-                                                <div class="user">
-                                            <img src="images/Philip-1.png" alt="Philip-1">
-                                            <div>
-                                            <h5>Jean</h5>
-                                            <p>Startup</p>
-                                            <p>"Plateforme simple et efficace</p>
-                                            ⭐⭐⭐⭐⭐
-                                            </div>
-                                            </div>
-                                            </div>
-                                            </div>
-                                            </div>
-                                            </div>
-                                            <!--2slide-->
-                                     <div class="carousel-item ">
-                                      <div class="row justify-content-center g-4">
-                                            <div class="col-md-4">
-                                            <div class="testimonial-card">
-                                                <div class="user">
-                                    <img src="images/Serge-1.png" alt="Serge-1" >
-                                    <div>
-                                    <h5>Serge</h5>
-                                    <p>Entrepreneure</p>
-                                     <p> Très bon service, "j'ai trouvé un développeur en 2jours !"</p>
-                                     ⭐⭐⭐⭐⭐
-                                     </div>
-                                    </div>
-                                    </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                    <div class="testimonial-card">
-                                        <div class="user">
-                                    <img src="images/Patrick-1.png" alt="Philip-1">
-                                    <div>
-                                    <h5>Ali</h5>
-                                    <p>-Freelance</p>
-                                    <p>AfriTalent m'a permis de trouver mes premiers clients.</p>
-                                    ⭐⭐⭐⭐⭐
-                                    </div>
-                                    </div>
-                                    </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                    <div class="testimonial-card">
-                                        <div class="user">
-                                    <img src="images/Philip-1.png" alt="Philip-1" >
-                                    <div>
-                                    <h5>Jean</h5>
-                                    <p>Startup</p>
-                                    <p>"Plateforme simple et efficace</p>
-                                    ⭐⭐⭐⭐⭐
-                                    </div>
-                                    </div>
-                                    </div>
-                                    </div>
-                                </div>
-                                </div>  
-                                       <!--control-->
-                                    <button class="carousel-control-prev" type="button"data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon"></span>  
-                                    </button>    
-                                    <button class="carousel-control-next" type="button"data-bs-target="#testimonialCarousel" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon"></span>  
-                                    </button>  
-                            </div>
-                            </div>             
-                        </section>
+    <section>
+        <H2 class="text-center">Les Temoignages sur AfriTalent Tech</H2>
+<div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+<div class="carousel-inner">
+
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <div class="container">
+        <div class="row">
+
+          <!-- Card 1 -->
+          <div class="col-md-4">
+            <div class="card testimonial-card text-center">
+              <img src="https://randomuser.me/api/portraits/men/5.jpg" class="testimonial-img">
+              <h5>Serge</h5>
+              <small>Entrepreneur</small>
+              <p>"Très bon service, j’ai trouvé un développeur en 2 jours !"</p>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-4">
+            <div class="card testimonial-card text-center">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" class="testimonial-img">
+              <h5>Ali</h5>
+              <small>Freelance</small>
+              <p>"AfriTalent m’a permis de trouver mes premiers clients."</p>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+          <!-- Card 3-->
+          <div class="col-md-4">
+            <div class="card testimonial-card text-center">
+              <img src="https://randomuser.me/api/portraits/men/44.jpg" class="testimonial-img">
+              <h5>Jean</h5>
+              <small>Startup</small>
+              <p>"Plateforme simple et efficace.Montre les talentstech de l'Afrique "</p>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card testimonial-card text-center">
+              <img src="https://randomuser.me/api/portraits/women/32.jpg" class="testimonial-img">
+              <h5>Amina</h5>
+              <small>Designer</small>
+              <p>"Très belle expérience."</p>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card testimonial-card text-center">
+              <img src="https://randomuser.me/api/portraits/men/30.jpg" class="testimonial-img">
+              <h5>David</h5>
+              <small>CEO</small>
+              <p>"Service rapide et efficace."</p>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card testimonial-card text-center">
+              <img src="https://randomuser.me/api/portraits/women/86.jpg" class="testimonial-img">
+              <h5>Fatou</h5>
+              <small>Marketing</small>
+              <p>"Interface moderne."</p>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  
+</div>
+</section>
                                             <!--CTA-->
                      <section class="cta">
                         <div class="cta-container">
@@ -271,7 +304,7 @@
                      </section>
                      </main>
                                         <!--Footer-->
-                    <footer class="bg-dark text-white pt-4">
+                    <footer class="foot text-white pt-4">
                           <div class="container">
                           <div class="row">
                             <div class="col-md-3">
@@ -288,7 +321,7 @@
                           </div>
                          <div class="col-md-3">
                            <h5>Liens utiles</h5>
-                            <ul class="list-unstyled" >
+                            <ul class="list-unstyled">
                             <li> <a href="index.html">Accueil</a></li>
                              <li> <a href="freelances.html">Freelances</a></li>
                              <li><a href="tarifs.html">Tarifs</a></li>
@@ -324,9 +357,9 @@
                                  </div>
                                  </div>
                                  </footer>
-                        
-
-
+                                    <button id="btnTop"> 
+                                      <i class=" bi bi-arrow-up-circle"></i> 
+                                    </button>
  <!-- Bootstrap 5 via CDN : script JavaScript -->
  <script
 src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

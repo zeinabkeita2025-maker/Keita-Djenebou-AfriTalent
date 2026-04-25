@@ -3,10 +3,14 @@
 body{
     background-color: var(--color-light);
     font-family: var(--font-main);
+    margin-top: 60px;
+    background-color: rgba(255, 255, 255, 0.459)
 }
 .navbar{
     background-color: var(--color-light);
     padding: var(--spacing-md);
+    position: fixed;
+    top: 0;
 }
 .btn{
     background-color: var(--color-primary);
@@ -33,34 +37,6 @@ h1, h2, h3, h4, h5{
     justify-content: center;
     margin-right: 10px;
 }
-/*A dans le rectangle*/
-.logo-a{
-    color: white;
-    font-weight: bold;
-    font-size: 28px;
-}
-/*text Afritalent*/
-.logo-text{
-    color: #1a1a1a;
-    font-weight: 600;
-    font-size: 20px;
-}
-.logo-texte{
-    color: #d4a017;
-}
-/*les liens nav*/
-.nav-link{
-    position: relative;
-    transition: 0.3s;
-    color: #1a1a1a;
-}
-.nav-link:focus{
-     color: #d4a017;
-}
-.nav-link:hover{
-    color: #d4a017 ;
-}
-
 .btn{
     background-color: #d4a017;
     padding: 10px 10px ;
@@ -74,24 +50,31 @@ h1, h2, h3, h4, h5{
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+
 .form-control, .form-select{
-    background-color: #333;
+    background-color: #33333394;
     color: white;
     border: 1px solid #555;
 }
-.freelance-card{
-    background-color: #333;
-    color: white;
-    border-radius: 10 px;
-    transition: 0.3s;
+/* IMAGE */
+.freelance-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
 }
-.freelance-card{
-    transform:translateY(-5px) ;
+
+/* CARD */
+.freelancer-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #55555584;
+  transition: 0.3s;
+  color: aliceblue;
 }
-h5{
-    color: #ffd700;
-}
-.profil{
-    height: 200px;
-    width: 200px;
+
+/* HOVER */
+.freelancer-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }

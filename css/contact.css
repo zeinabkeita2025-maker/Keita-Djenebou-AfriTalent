@@ -3,11 +3,15 @@
 body{
     background-color: var(--color-light);
     font-family: var(--font-main);
-    
+       
 }
 .navbar{
-    background-color: var(--color-light);
+   background-color: var(--color-light);
     padding: var(--spacing-md);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 .btn{
     background-color: var(--color-primary);
@@ -20,6 +24,18 @@ h1, h2, h3, h4, h5{
     background-color: #d4a017;
     padding: 10px 10px ;
     border-radius: 10px;
+}
+/*l'image en haut */
+.tof {
+    background-image: url('../images/istockphoto-2196870531-612x612.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;        /* ← toute l'image visible, réduite pour tenir */
+    position: relative;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    
 }
 /*section info et formulaire*/
 .contact{
@@ -91,6 +107,12 @@ background: #f2f2f2;
 }
 footer{
     flex-shrink: 0; /*empeche le footer de rétrecir*/
+}
+#c{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0;
 }
 @media(max-width:768px){
      .map-responsive iframe{

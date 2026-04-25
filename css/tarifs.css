@@ -1,16 +1,15 @@
 
 /* les variables CSS dans root*/
 body{
-    background-color: var(--color-light);
+    background-color: whitesmoke;
     font-family: var(--font-main);
-    background-color:rgb(144, 117, 68);
-    display: flex;
-    flex-direction: column;
-    
+     margin-top: 100px;
 }
 .navbar{
-    background-color: var(--color-light);
+    background-color: var(--color-primary);
     padding: var(--spacing-md);
+    position: sticky;   /*pour que ma navbar reste fixe*/
+    top: 0 ;
 }
 .btn{
     background-color: var(--color-primary);
@@ -35,7 +34,8 @@ main{
 }
 .text-center{
     margin-bottom: 20px;
-     margin-top: 30px;
+    margin-top: 30px;
+    color:#1c1c1c;
 }
 .card{
     border: 1px solid #ccc;

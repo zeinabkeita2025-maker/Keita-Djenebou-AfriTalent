@@ -1,12 +1,13 @@
 
 body{
-    background-color: var(--color-light);
+    background: linear-gradient(115deg, rgba(0,0, 0, 0.15), rgba(0,40,80,0.6) );
     font-family: var(--font-main);
+     margin-top: 60px;
 }
 .navbar{
-    background-color: var(--color-light);
+     background-color: var(--color-primary);
     padding: var(--spacing-md);
-     position: fixed;
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;

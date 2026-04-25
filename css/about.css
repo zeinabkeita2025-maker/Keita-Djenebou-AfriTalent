@@ -6,6 +6,10 @@ body{
 .navbar{
     background-color: var(--color-light);
     padding: var(--spacing-md);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 .btn{
     background-color: var(--color-primary);
@@ -79,6 +83,57 @@ h1, h2, h3, h4, h5{
     transition: transform 0.3s;
     box-shadow: 0.3s;
 }
+
+/*animation initiale*/
+.fade-item{
+    opacity:0;
+    transform: translateY(30px);
+    animation: fadeUp 1s ease forwards;
+   
+}
+/*image des cardes*/
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: 0.4s ease;
+    transform: 0.4s ease;
+}
+.card:hover{
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgb(85, 83, 83);
+}
+.card:hover img{
+    transform: scale(1.1);
+}
+/*Bouton*/
+.card .btn{
+    background: var(--accent);
+    border: none;
+    transition: all 0.3s ease;
+}
+.card .btn:hover{
+    background: #a67c3b;
+    transform: scale(1.05);
+}
+    /*Animation*/
+    @keyframes fadeUp{
+        from{
+            opacity: 0;
+            transform: translateY(40px);
+        }
+        to{
+            opacity: 1;
+            transform: translate(0);
+        }
+    }
+/*apparition une à une*/
+.fade-item:nth-child(1){animation-delay: 0.7s;}
+.fade-item:nth-child(2){animation-delay: 1.2s;}
+.fade-item:nth-child(3){animation-delay: 1.7s;}
+.fade-item:nth-child(4){animation-delay: 2.2s;}
+.fade-item:nth-child(5){animation-delay: 2.5s;}
+
 /*effet hover sur les cadres*/
 .equipe .card:hover{
 transform: translateY(-10px);
@@ -108,6 +163,7 @@ box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 /*sections valeurs*/
 .valeurs .container{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     gap: 20px;
@@ -141,17 +197,32 @@ box-shadow: 0 10px 25px rgba(0,0,0,0.2);
     font-size: 1rem;
     color: #555;
 }
+/*section chiffres clés*/
+#chiffre{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    
+}
+#chi{
+    flex: 1;
+    flex-wrap: wrap;
+    min-height: 150px;
+    text-align: center;
+    padding: 20px 40px;
+    background: #48151512;
+    border-radius: 12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.8) ;
+}
 /*Responsive*/
 @media(max-width:768px){
-    .valeurs .valeur-card{
-        flex: 1 1 calc(50% - 20px); 
-        max-width: calc(50% -20px);
+    #chiffre{
+       grid-template-columns:repeat(2, 1fr);
     }
 }
 @media(max-width:375px){
-    .valeurs .valeur-card{
-    flex: 1 1 100%;
-    max-width:100%;
-
+    #chiffre{
+       grid-template-columns: 1fr;
     }
+    
 }

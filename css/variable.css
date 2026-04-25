@@ -1,26 +1,56 @@
     /*les 6+ variables*/
 :root{
-    --color-primary:#d4a017;
-    --color-dark:#1a1a1a;
-    --color-light:#ffffff;
+    --color-primary:#0d1b2a;
+    --color-secondary:#1b263b;
+    --accent:#415a77;
+    --cta:#c89b3c;
+    --cta-hover:#a67c2a;
+    --light:#f8f9faab;
     --font-main:'Open Sans', sans-serif;
     --font-title:'Montserrat' sans serif;
     --spacing-md:8px;
-    --radius:8px;
+    --radius:1.25rem;
+    
 }
 a{
     text-decoration: none;
     color: white;
 }
 .navbar{
-    background-color: var(--color-light);
+     padding: var(--spacing-md);
+    background-color: var(--color-primary);
     position: fixed;
     top: 0;
-    padding: 10px 20px;
+    transition: 0.3s;
+}
+.foot{
+    background-color: var(--color-primary); 
 }
 html,body{
     padding-top: 20px;
     overflow-x: hidden;
+    background-color: var(--light);
+}
+section{
+    background-color: var(--light);
+}
+h1, h2, h3, h4, h5{
+    font-family: var(--font-title);
+    color: var(--white-color);
+}
+.container *{
+    transition: 0.3s;
+ }
+
+p{
+    font-family: var(--font-main);
+}
+.card{
+   
+    border-radius: var(--radius);
+}
+.card-title{
+    color:var(--color-primary);
 }
 *{
     margin: 0;
@@ -39,7 +69,7 @@ html,body{
 .logo-rect{
     width:50px;
     height: 50px; 
-    background-color: #d4a017;
+    background-color: var(--cta);
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -54,32 +84,40 @@ html,body{
 }
 /*text Afritalent*/
 .logo-text{
-    color: #1a1a1a;
+    color:  white;
     font-weight: 600;
     font-size: 20px;
 }
 .logo-texte{
-    color: #d4a017;
+    color:var(--cta) ;
 }
 /*les liens nav*/
 .nav-link{
     position: relative;
     transition: 0.3s;
-    color: #1a1a1a;
+    color: white
 }
 .nav-link:focus{
-     color: #d4a017;
+      color:rgb(1, 1, 23) ;
 }
 .nav-link:hover{
-    color: #d4a017 ;
+   color: var(--cta);
+    text-decoration: dashed ;
 }
 
 .btn{
-    background-color: #d4a017;
+    background-color: var(--cta);
+    color: #0d1b2a;
     padding: 10px 10px ;
     border-radius: 10px;
+    border: none;
 }
-/*footer*/
+.btn:hover{
+    background-color: white;
+}
+/*Animation css pour les cardes*/
+
+/*footer espacement entre le copryth et les liens*/
 .foot{
     display: flex;
     flex-direction: row;
@@ -114,3 +152,63 @@ html,body{
         margin: auto;
     }
 }
+
+                                    /*css pour js*/
+                /*poour dark/light*/
+/*les variables dans root*/
+:root{
+    --bg-color:white;
+    --text-colo:rgba(0, 0, 0, 0.619);
+}
+body{
+    background-color: var(--bg-color);
+    color: var(--text-colo);
+}
+/*style pour light*/
+body.dark{
+    background: linear-gradient(135deg, var(--accent), var(--color-secondary));
+    color: var(--bg-color);
+}
+#themeToggle{
+    background: linear-gradient(135deg, var(--accent), var(--color-secondary));
+    border: none;
+    border-radius: 50%;
+    padding: 12px 18px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+ #themeToggle:active{
+    transform: scale(0.96);
+ }
+body.dark #themeToggle{
+    background: linear-gradient(115deg, #2C3E50, #34495e);
+}
+                /*pour la navbar au scroll*/
+.navbar.scrolled{
+    background: linear-gradient(115deg,  rgba(0,0, 0, 0.15), rgba(0,40,80,0.6)) ;
+    padding: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+                /*button retour en haut*/
+#btnTop{
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    padding: 5px 15px;
+    border: 2px solid black;
+    border-radius: 6px;
+    background:#f4b400;
+    color: black;
+    cursor: pointer;
+    display: none;
+    z-index: 999;
+}   
+body.dark#btnTop{
+    background-color: #f4b400;
+    color: black;
+}           
