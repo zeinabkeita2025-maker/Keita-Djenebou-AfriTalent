@@ -2,7 +2,7 @@
 body{
     background: linear-gradient(115deg, rgba(0,0, 0, 0.15), rgba(0,40,80,0.6) );
     font-family: var(--font-main);
-     margin-top: 60px;
+     margin-top: 40px;
 }
 .navbar{
      background-color: var(--color-primary);
@@ -20,4 +20,11 @@ body{
     background-color: #d4a017;
     padding: 10px 10px ;
     border-radius: 10px;
+}
+#blog a{
+    color: black;
+}
+.card a:hover{
+    background-color: black;
+    color: aliceblue;
 }

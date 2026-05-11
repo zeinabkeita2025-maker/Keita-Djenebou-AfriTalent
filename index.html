@@ -50,7 +50,7 @@
         </header>
         <main>
                              <!--HERO-->
-<section class="hero">
+<section class="hero fade">
     <div class="overlay"></div>
     <div class="hero-content">
     <h1>Bienvenue En AfriTalent tech</h1>
@@ -61,18 +61,18 @@
     <div class="Afrique"><img src="images/Afrique-blanc.svg" alt="Afrique">
       </div> 
 </section>
-    <section class="stats-container">
+    <section class="stats-container fade">
         <div class="stats">
             <div class="card">
-                    <h2>+500</h2>
+                    <h2 class="counter" data-target="500">+0</h2>
                     <P>Freelances</P>
                 </div>
             <div class="card">
-                    <h2>+800</h2>
+                    <h2 class="counter" data-target="800">+0</h2>
                     <P>Entreprises</P>
                 </div>
                   <div class="card">
-                    <h2>+12000</h2>
+                    <h2 class="counter" data-target="12000">+0</h2>
                     <P>missions</P>
                 </div>
                 </div>
@@ -84,12 +84,12 @@
     </div>
 </section>
     <!--Comment ca marche-->
+    <section class="container my-5 fade">
         <h2 class="text-center mb-5 text-primary-custom">Comment ca marche</h2>
-    <section class="container my-5" id="comment ca marche">
         <div class="grid-cards">
           <div class="left">
         <div class="custom-card card1">
-          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="ph1">
+          <img src="images/compte.jpg" alt="ph1">
           <div class="overlay"></div>
           <div class="content">
             <span class="step-number">1</span>
@@ -100,8 +100,8 @@
         </div>
         </div>
         <div class="center">
-        <div class=" custom-card card2">
-          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="ph2">
+        <div class="custom-card card2">
+          <img src="images/istockphoto-1369953931-612x612.webp" alt="ph2">
           <div class="overlay"></div>
             <div class="content">
             <span class="step-number">2</span>
@@ -110,8 +110,8 @@
             <P>Décrivez votre besoin en quelques lignes</P>
         </div>
         </div>
-       <div class=" custom-card card3">
-            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" alt="ph3">
+       <div class="custom-card card3">
+            <img src="images/choisirfreelance.jpg" alt="ph3">
             <div class="overlay"></div>
             <div class="content">
             <span class="step-number">3</span>
@@ -122,8 +122,7 @@
         </div>
         </div>
         <div class="right">
-          
-        <div class=" custom-card card4">
+        <div class="custom-card card4">
           <div class="small">
           <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3" alt="ph4">
           <div class="overlay"></div>
@@ -135,7 +134,7 @@
         </div>
         </div>
         </div>
-        <div class=" custom-card card5">
+        <div class="custom-card card5">
           <div class="big">
           <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80" alt="">
           <div class="overlay"></div>
@@ -151,7 +150,7 @@
         </div>
     </section>
                         <!--Categories-->
-        <section  id="Catégories"class="Catégories py-5 bg-light-custom">
+        <section class="Catégories py-5 bg-light-custom fade">
           <div class="container">
                 <h2 class="text-center mb-5 text-primary-custom">Catégories de services</h2>
             <div class="row g-4">
@@ -210,96 +209,114 @@
                 </div>
         </section>
                                     <!--Temoignages-->
-    <section>
+    <section class="fade">
         <H2 class="text-center">Les Temoignages sur AfriTalent Tech</H2>
 <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
 <div class="carousel-inner">
 
     <!-- Slide 1 -->
     <div class="carousel-item active">
-      <div class="container">
+      <div class="container" id="temoin">
         <div class="row">
-
           <!-- Card 1 -->
-          <div class="col-md-4">
             <div class="card testimonial-card text-center">
-              <img src="https://randomuser.me/api/portraits/men/5.jpg" class="testimonial-img">
-              <h5>Serge</h5>
-              <small>Entrepreneur</small>
-              <p>"Très bon service, j’ai trouvé un développeur en 2 jours !"</p>
-              <div class="stars">★★★★★</div>
+              <div class="card-image">
+              <img src="images/temoinMan.jpg"class="card-img-top">
+              </div>
+              <h2>Serge Benois</h2>
+              <p class="role">Entrepreneur</p>
+              <p class="quote">"Très bon service, j’ai trouvé un développeur en 2 jours !"</p>
+              <div class="stars">⭐⭐⭐⭐⭐</div>
             </div>
-          </div>
+            </div>
+            </div>
+            </div>
+          
 
-          <!-- Card 2 -->
-          <div class="col-md-4">
-            <div class="card testimonial-card text-center">
-              <img src="https://randomuser.me/api/portraits/men/32.jpg" class="testimonial-img">
-              <h5>Ali</h5>
-              <small>Freelance</small>
-              <p>"AfriTalent m’a permis de trouver mes premiers clients."</p>
-              <div class="stars">★★★★★</div>
-            </div>
-          </div>
-          <!-- Card 3-->
-          <div class="col-md-4">
-            <div class="card testimonial-card text-center">
-              <img src="https://randomuser.me/api/portraits/men/44.jpg" class="testimonial-img">
-              <h5>Jean</h5>
-              <small>Startup</small>
-              <p>"Plateforme simple et efficace.Montre les talentstech de l'Afrique "</p>
-              <div class="stars">★★★★★</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <!-- Slide 2 -->
     <div class="carousel-item">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
+      <div class="container" id="temoin">
             <div class="card testimonial-card text-center">
-              <img src="https://randomuser.me/api/portraits/women/32.jpg" class="testimonial-img">
-              <h5>Amina</h5>
-              <small>Designer</small>
-              <p>"Très belle expérience."</p>
-              <div class="stars">★★★★★</div>
-            </div>
+              <img src="images/phototemoin2.jpg" class="card-img-top">
+              <h2>Amina Sissoko</h2>
+              <p class="role">Designer</small>
+              <p class="quote">"Très belle expérience."</p>
+              <div class="stars">⭐⭐⭐⭐⭐</div>
           </div>
-          <div class="col-md-4">
+          </div>
+          </div>
+          <!--slide 4-->
+      <div class="carousel-item">
+      <div class="container" id="temoin">
             <div class="card testimonial-card text-center">
-              <img src="https://randomuser.me/api/portraits/men/30.jpg" class="testimonial-img">
-              <h5>David</h5>
-              <small>CEO</small>
-              <p>"Service rapide et efficace."</p>
-              <div class="stars">★★★★★</div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card testimonial-card text-center">
-              <img src="https://randomuser.me/api/portraits/women/86.jpg" class="testimonial-img">
-              <h5>Fatou</h5>
-              <small>Marketing</small>
-              <p>"Interface moderne."</p>
-              <div class="stars">★★★★★</div>
-            </div>
-          </div>
-
+              <img src="images/phototemoin.jpg" class="card-img-top">
+              <h2>David Diop</h2>
+              <p class="role">CEO</h3>
+              <p class="quote">"Service rapide et efficace."</p>
+              <div class="stars">⭐⭐⭐⭐⭐</div>
         </div>
       </div>
     </div>
+     <!-- Slide 4 -->
+    <div class="carousel-item">
+      <div class="container" id="temoin">
+        <div class="row">
+            <div class="card testimonial-card text-center">
+              <img src="images/freelance.jpg" class="card-img-top">
+              <h2>Fatou Konaré</h2>
+              <p class="role">Marketing</h3>
+              <p class="quote">"Interface moderne."</p>
+              <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          </div>
+          </div>
+          <!--slide5-->
+          <div class="carousel-item">
+      <div class="container" id="temoin">
+        <div class="row">
+            <div class="card testimonial-card text-center">
+              <img src="images/DB.jpg" class="card-img-top">
+              <h2>Ibrahim Keita</h2>
+              <p class="role">Developpeur Back-end</h3>
+              <p class="quote">"Meilleur plateforme."</p>
+              <div class="stars">⭐⭐⭐⭐⭐</div>
+          </div>
+          </div>
+          </div>
+          </div>
+          <!--slide6-->
+          <div class="carousel-item">
+      <div class="container" id="temoin">
+        <div class="row">
+            <div class="card testimonial-card text-center">
+              <img src="images/temoin6.jpg" class="card-img-top">
+              <h2>Marie Claire</h2>
+              <p class="role">Développeuse front-end</h3>
+              <p class="quote">AfriTalent tech is the best</p>
+              <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          </div>
+          </div>
   </div>
 
-  <!-- Controls -->
+                <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
   
+              <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
 </div>
 </section>
                                             <!--CTA-->
-                     <section class="cta">
+                     <section class="cta fade">
                         <div class="cta-container">
                         <h2 class="fw-bold">Rejoins AfriTalent aujourd'hui</h2>
-                        <a href="contact.html"><button class="btn btn-outline-light">S'inscrire</button></a>
+                        <p>Chez nous trouver les meilleurs freelances en Afrique avec des compétences extraordinaires</P>
+                        <a href="contact.html"><button class="btn btn-outline-light" id="inscrit">S'inscrire</button></a>
                         </div>
                      </section>
                      </main>

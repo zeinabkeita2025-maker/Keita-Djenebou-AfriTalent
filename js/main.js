@@ -48,3 +48,48 @@ if(window.scrollY > 50){
 btn.addEventListener("click", () =>{
     window.scrollTo({top: 0, behavior:'smooth'});
 });
+                            //counter animée
+const counter = document.querySelectorAll('.counter');
+const observer = new IntersectionObserver((entries) =>{
+    entries.forEach(entry =>{
+    if(entry.isIntersecting){
+        const counter = entry.target;
+        const target = +counter.dataset.target;
+ 
+        let count = 0;
+    const updateCounter = () =>{
+        const increment = target / 200; // la vistesse soit un peu lente
+        count += increment;
+        
+        if (count < target){
+            counter.textContent = Math.floor(count); // chiffres en entier
+            requestAnimationFrame(updateCounter);// une animation plus fluide
+        }else{
+            counter.textContent = target;
+        }
+    };
+    updateCounter();
+    observer.unobserve(counter);
+    }
+});
+}, {
+    threshold:1 // quand 50% de l'élément est visible.
+});
+counter.forEach(counter =>{
+    observer.observe(counter);
+});
+  // section en fondu 
+ 
+  const sections = document.querySelectorAll(".fade");
+  const observers = new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
+    });
+  }, {
+     threshold:0.2
+  });
+  sections.forEach((section)=>{
+    observers.observe(section);
+  });

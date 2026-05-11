@@ -8,7 +8,7 @@
     --light:#f8f9faab;
     --font-main:'Open Sans', sans-serif;
     --font-title:'Montserrat' sans serif;
-    --spacing-md:8px;
+    --spacing-md:6px;
     --radius:1.25rem;
     
 }
@@ -108,7 +108,7 @@ p{
 .btn{
     background-color: var(--cta);
     color: #0d1b2a;
-    padding: 10px 10px ;
+    padding: var(--spacing-md);
     border-radius: 10px;
     border: none;
 }
@@ -134,9 +134,11 @@ p{
 }
 /*Responsive*/
 /*Mobile*/
+@media(min-width:365px){
 .cards{
     display: flex;
     flex-direction: column;
+}
 }
 /*tablette*/
 @media(min-width:768px){
@@ -197,7 +199,7 @@ body.dark #themeToggle{
 #btnTop{
     position: fixed;
     left: 50%;
-    bottom: 20px;
+    bottom: 10px;
     transform: translateX(-50%);
     padding: 5px 15px;
     border: 2px solid black;
@@ -212,3 +214,17 @@ body.dark#btnTop{
     background-color: #f4b400;
     color: black;
 }           
+            /*css pour la section fondu*/
+.fade{
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease,
+                transform  0.8s ease;
+    filter: blur(5px);           
+}
+/*css pour js*/
+.fade.show{
+opacity: 1;
+transform: translateY(0);
+filter: blur(0);
+}

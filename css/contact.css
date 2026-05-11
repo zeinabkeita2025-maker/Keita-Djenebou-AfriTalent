@@ -3,7 +3,7 @@
 body{
     background-color: var(--color-light);
     font-family: var(--font-main);
-       
+     margin-top: 5px;;
 }
 .navbar{
    background-color: var(--color-light);
@@ -27,14 +27,16 @@ h1, h2, h3, h4, h5{
 }
 /*l'image en haut */
 .tof {
-    background-image: url('../images/istockphoto-2196870531-612x612.jpg');
+    background-image: url('../images/temoin7.jpg');
     background-repeat: no-repeat;
-    background-position:center;
-    background-size:cover;        /* ← toute l'image visible, réduite pour tenir */
-    position: relative;
-    height: 50vh;
-    display: flex;
-    align-items: center;
+    background-position:top center;
+    background-size:100% auto;        /* ← toute l'image visible, réduite pour tenir */
+    height: 400px;
+    width: 100%;
+}
+.overlay{
+
+    background: rgba(0,40,80,0.6);/*effet bleu sombre*/
     
 }
 /*section info et formulaire*/
