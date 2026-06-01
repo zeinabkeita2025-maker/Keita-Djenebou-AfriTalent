@@ -35,9 +35,7 @@ h1, h2, h3, h4, h5{
     width: 100%;
 }
 .overlay{
-
     background: rgba(0,40,80,0.6);/*effet bleu sombre*/
-    
 }
 /*section info et formulaire*/
 .contact{

@@ -21,7 +21,6 @@ h1, h2, h3, h4, h5{
 }
 /*section*/
 .hero{
-    background-image: url('../images/Johannesburg bac.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -32,6 +31,8 @@ h1, h2, h3, h4, h5{
     justify-content: space-between;
     padding: 0 80px;
    color: aliceblue;
+   transition: background-image 1s ease;
+   opacity: 1;
 }
 .overlay{
     position: absolute;
@@ -39,11 +40,17 @@ h1, h2, h3, h4, h5{
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,40,80,0.6);/*effet bleu sombre*/
+    background: linear-gradient( rgba(0,40,80,0.4));/*effet bleu sombre*/
     z-index: 1;
     pointer-events: none;
     display: flex;
    justify-content: space-between;
+}
+.hero::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0, 0, 0.45);
 }
 
 /*carte pour afrique*/
@@ -57,10 +64,12 @@ h1, h2, h3, h4, h5{
     font-weight: bold;
     line-height: 1.2;
     margin-bottom: 20px;
+    text-shadow: 0 4px 15px rgba(0,0, 0, 0.5);
 }
 .hero-content h2{
     font-size: 18px;
     line-height: 1.6;
+    text-shadow: 0 4px 15px rgba(0,0, 0, 0.5);
 }
 .hero-shape{
     position: absolute;
@@ -122,15 +131,12 @@ h1, h2, h3, h4, h5{
     object-fit: cover;/*evite la déformation de l'image*/
    border-radius: 8px;
 }
-#clair{
-    background-color:transparent;
-    border: 2px solid var(--cta);
-    padding:var(--spacing-md);
-    color:white;
-}
+
 #clair:hover{
     background-color: #bd9636;
     color: #000;
+    transform: translateY(-3px);
+    transition: 0.3s;
 }
 /*section comment ca marche*/
 /*Grid*/
@@ -444,3 +450,6 @@ a{
     }
 }
 
+.hidden{
+    display: none !important ;
+}

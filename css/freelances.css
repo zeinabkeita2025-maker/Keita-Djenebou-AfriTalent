@@ -3,44 +3,26 @@
 body{
     background-color: var(--color-light);
     font-family: var(--font-main);
-    margin-top: 60px;
+    margin-top: 50px;
     background-color: rgba(255, 255, 255, 0.459)
 }
-.navbar{
-    background-color: var(--color-light);
-    padding: var(--spacing-md);
-    position: fixed;
-    top: 0;
-}
+
 .btn{
     background-color: var(--color-primary);
     border: var(--radius);
 }
 h1, h2, h3, h4, h5{
      font-family: var(--font-title);
+     color: black;
 }
-/*logo*/
-/*container du logo*/
-.logo{
-    display: flex;
-    align-items: center;
-    font-family: 'Montserrat', Arial, sans serif ;
-}
-/*Rectangle jaune pour le A*/
-.logo-rect{
-    width:50px;
-    height: 50px; 
-    background-color: #d4a017;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10px;
-}
+
 .btn{
     background-color: #d4a017;
     padding: 10px 10px ;
     border-radius: 10px;
+}
+.placehorder{
+    color:white;
 }
 .card{
     text-align: center;
@@ -50,11 +32,15 @@ h1, h2, h3, h4, h5{
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-
-.form-control, .form-select{
-    background-color: #33333394;
-    color: white;
-    border: 1px solid #555;
+.catégories{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around; 
+}
+.filtre{
+    border-radius: 999px;
+    background-color:#E6F1FB;
+    padding: auto;
 }
 /* IMAGE */
 .freelance-img {
@@ -68,7 +54,7 @@ h1, h2, h3, h4, h5{
   border: none;
   border-radius: 15px;
   overflow: hidden;
-  background-color: #1d1c1c84;
+  background-color: rgba(128, 128, 128, 0.226);
   transition: 0.3s;
   color: aliceblue;
 }
@@ -84,4 +70,8 @@ h1, h2, h3, h4, h5{
 }
 .bl:active{
     background-color: aliceblue;
+}
+
+.hidden{
+    display: none !important;
 }

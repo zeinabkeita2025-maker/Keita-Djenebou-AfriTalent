@@ -49,38 +49,38 @@ rel="stylesheet">
         </nav>  
         </header>
                 <!--FILTRE-->
-                        <div class="row mb-4">
+                        <!-- <div class="row mb-4">
                         <div class="col-md-4 mb-2">
                             <input type="text" id="searchInput"  class="form-control" placeholder="Rechercher">
                         </div>
-                    <div class="col-md-4 mb-2">
-                        <select class="form-control">
-                            <option > Toutes Catégories</option>
-                            <option value="dev" >Développement</option>
-                            <option value="design" >Design</option>
-                            <option value="marketing">Marketing</option>
-                            <option value="seo expert">SEO Expert</option>
-                             <option value="graphiste">Graphistes</option>
-                        </select>
-                    </div>
-                    <div class="col-md-4 mb-2">
-                        <select class="form-select">
-                            <option value="" class="bl"> toutes Disponibilités</option>
-                            <option  value="disponible">Disponible</option>
-                            <option  value="occupé">Occupé</option>
+                    <div class="col-md-4 mb-2"> -->
+                        <!-- <select class="" id=""> -->
+                          <div class="catégories">
+                            <button class="filtre" data-category="tous"> Toutes Catégories</button>
+                            <button class="filtre" data-category="dev"> <i class="bi bi-code-slash"></i>Développement</button>
+                            <button class="filtre"data-category="design">Design</button>
+                            <button class="filtre"data-category="marketing">Marketing</button>
+                            <button class="filtre"data-category="seo expert">SEO Expert</button>
+                            <button class="filtre"data-category="graphiste">Graphistes</button>
+                            <button class="filtre"data-category="data">Data Analyst</button >
+                            </div>
+                    <!-- </div>
+                    <div class="col-md-4 mb-2"> -->
+                       <!-- <select class="form-select" id="availabilitySelect">
+                            <option value="all" class="bl"> Toutes Disponibilités</option>
+                            <option  value="available">Disponible</option>
+                            <option  value="busy">Occupé</option>
                         </select>
                     </div>
                         </div>
+                        -->
                          <!--GRID des freelances-->
                <div class="container my-5">
-
   <h2 class="text-center mb-5 fw-bold">Top Freelancers</h2>
-
   <div class="row g-4">
-
     <!-- CARD 1 -->
     <div class="col-md-4">
-      <div class="card freelancer-card">
+      <div class="card freelancer-card" data-category="dev" data-availability="available">
         <img class="freelance-img" src="images/istockphoto-2162200873-612x612.jpg" alt="Dev">
         <div class="card-body text-center">
           <h5>Amina Diallo</h5>
@@ -95,7 +95,7 @@ rel="stylesheet">
 
     <!-- CARD 2 -->
     <div class="col-md-4">
-      <div class="card freelancer-card">
+      <div class="card freelancer-card" data-category="design" data-availability="available">
         <img class="freelance-img" src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=500&q=80" alt="">
         <div class="card-body text-center">
           <h5>Moussa Traoré</h5>
@@ -110,7 +110,7 @@ rel="stylesheet">
 
     <!-- CARD 3 -->
     <div class="col-md-4">
-      <div class="card freelancer-card">
+      <div class="card freelancer-card" data-category="marketing" data-availability="busy">
         <img class="freelance-img" src="images/istockphoto-1321462048-612x612.jpg" alt="">
         <div class="card-body text-center">
           <h5>Fatou Ndiaye</h5>
@@ -120,12 +120,12 @@ rel="stylesheet">
             <a href="#" class="btn btn-dark btn-sm">Voir profil</a>
           </div>
         </div>
-      </div>
+      </div> 
     </div>
 
     <!-- CARD 4 -->
     <div class="col-md-4">
-      <div class="card freelancer-card">
+      <div class="card freelancer-card" data-category="dev" data-availability="available">
         <img class="freelance-img" src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=500&q=80" alt="">
         <div class="card-body text-center">
           <h5>Oumar Ba</h5>
@@ -140,7 +140,7 @@ rel="stylesheet">
 
     <!-- CARD 5 -->
     <div class="col-md-4">
-      <div class="card freelancer-card">
+      <div class="card freelancer-card" data-category="graphiste" data-availability="busy">
         <img class="freelance-img" src="images/temoin8.jpg" alt="">
         <div class="card-body text-center">
           <h5>Marie Kouyaté</h5>
@@ -155,7 +155,7 @@ rel="stylesheet">
 
     <!-- CARD 6 -->
     <div class="col-md-4">
-      <div class="card freelancer-card">
+      <div class="card freelancer-card" data-category="data" data-availability="available">
         <img class="freelance-img" src="https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=500&q=80" alt="">
         <div class="card-body text-center">
           <h5>Ibrahima Sow</h5>
@@ -170,7 +170,7 @@ rel="stylesheet">
 
     <!-- CARD 7 -->
     <div class="col-md-4">
-      <div class="card freelancer-card">
+      <div class="card freelancer-card" data-category="dev" data-availability="busy">
         <img class="freelance-img" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=500&q=80" alt="">
         <div class="card-body text-center">
           <h5>Aliou Diop</h5>
@@ -185,7 +185,7 @@ rel="stylesheet">
 
     <!-- CARD 8 -->
     <div class="col-md-4">
-      <div class="card freelancer-card">
+      <div class="card freelancer-card" data-category="marketing" data-availability="busy">
         <img class="freelance-img" src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=500&q=80" alt="">
         <div class="card-body text-center">
           <h5>Jean Koffi</h5>
@@ -200,7 +200,7 @@ rel="stylesheet">
 
     <!-- CARD 9 -->
     <div class="col-md-4">
-      <div class="card freelancer-card">
+      <div class="card freelancer-card" data-category="seo expert" data-availability="available">
         <img class="freelance-img" src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=500&q=80" alt="">
         <div class="card-body text-center">
           <h5> Coumba Fall</h5>
@@ -212,9 +212,7 @@ rel="stylesheet">
         </div>
       </div>
     </div>
-
   </div>
-
 </div>
                          <footer class="foot text-white pt-4">
                           <div class="container">
@@ -225,7 +223,7 @@ rel="stylesheet">
                            <a  class="navbar-brand" href="index.html">
                        <div class="logo">
                         <div class="logo-rect">
-                            <span class="logo-a">A</span>
+                           <span class="logo-a">A</span>
                         </div>
                         <span class="logo-text">Afri<span class="logo-texte">Talent</span></span>
                        </div>
