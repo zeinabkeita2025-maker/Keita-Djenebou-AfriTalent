@@ -1,49 +1,18 @@
-/* les variables CSS dans root*/
-
+/*page de contact*/
 body{
     background-color: var(--color-light);
     font-family: var(--font-main);
      margin-top: 5px;;
 }
-.navbar{
-   background-color: var(--color-light);
-    padding: var(--spacing-md);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
-.btn{
-    background-color: var(--color-primary);
-    border: var(--radius);
-}
-h1, h2, h3, h4, h5{
-     font-family: var(--font-title);
-}
-.btn{
-    background-color: #d4a017;
-    padding: 10px 10px ;
-    border-radius: 10px;
-}
-/*l'image en haut */
-.tof {
-    background-image: url('../images/temoin7.jpg');
-    background-repeat: no-repeat;
-    background-position:top center;
-    background-size:100% auto;        /* ← toute l'image visible, réduite pour tenir */
-    height: 400px;
-    width: 100%;
-}
-.overlay{
-    background: rgba(0,40,80,0.6);/*effet bleu sombre*/
-}
 /*section info et formulaire*/
+/*section contact-info et formulaire*/
 .contact{
     background: linear-gradient(to right,#d4a017,#f5e6c8 );
     padding: 60px 20px;
     display: flex;
     justify-content: center;
 }
+/*div contenant les deux*/
 .contact-box{
     background-color: #ccc;
     display: flex;
@@ -59,7 +28,7 @@ h1, h2, h3, h4, h5{
 .contact-box:hover{
     transform: translateY(-5px);
 }
-/*colonnes */
+/*disposés en colonnes  pour qu'ils prennent tous la meme largeur*/
 .contact-info,.contact-form{
     flex: 1;
     min-width: 280px;
@@ -67,7 +36,7 @@ h1, h2, h3, h4, h5{
 /*input*/
 .contact-form input, .contact-form textarea{
 width: 100%;
-padding: 12 px;
+padding: 12px;
 border: none;
 border-radius: 8px;
 background: #f2f2f2;
@@ -77,7 +46,7 @@ background: #f2f2f2;
     height: 100px;
     resize: none;
 }
-/*BOUTON*/
+/*BOUTON d'envoie*/
 .contact-form button{
     background-color: #000;
     color: #fff;
@@ -102,25 +71,18 @@ background: #f2f2f2;
     height: 400px;
     border: 0;
 }
-.text-center{
-    margin-top: 20px;
+/*sous titre de veillance avec contact info*/
+.petit{
+    font-size: small;
 }
-footer{
-    flex-shrink: 0; /*empeche le footer de rétrecir*/
-}
-#c{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 0;
-}
-@media(max-width:768px){
-     .map-responsive iframe{
+/*responsive de maps*/
+@media (max-width:375px){
+    .map-responsive iframe{
         height: 200px;
     }
 }
-@media (max-width:375px){
-    .map-responsive iframe{
+@media(max-width:768px){
+     .map-responsive iframe{
         height: 200px;
     }
 }

@@ -1,25 +1,8 @@
-
+/*la page blog*/
 body{
     background: linear-gradient(115deg, rgba(0,0, 0, 0.15), rgba(0,40,80,0.6) );
     font-family: var(--font-main);
      margin-top: 40px;
-}
-.navbar{
-     background-color: var(--color-primary);
-    padding: var(--spacing-md);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
-.btn{
-    background-color: var(--color-primary);
-    border: var(--radius);
-}
-.btn{
-    background-color: #d4a017;
-    padding: 10px 10px ;
-    border-radius: 10px;
 }
 #blog a{
     color: black;
@@ -27,4 +10,13 @@ body{
 .card a:hover{
     background-color: black;
     color: aliceblue;
+}
+/*les images dans les cartes*/
+.card-img-top{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+/*les cartes*/
+.card{
+    transition: 0.3s;
 }

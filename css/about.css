@@ -3,27 +3,7 @@ body{
     background-color: var(--color-light);
     font-family: var(--font-main);
 }
-.navbar{
-    background-color: var(--color-light);
-    padding: var(--spacing-md);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
-.btn{
-    background-color: var(--color-primary);
-    border: var(--radius);
-}
-h1, h2, h3, h4, h5{
-     font-family: var(--font-title);
-}
-/* Reset*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
  /*section histoire text+image*/
 .histoiry{
     background-image: url('../images/HISTOIRE BAC.jpeg');
@@ -32,7 +12,7 @@ h1, h2, h3, h4, h5{
     background-position: center;
     height: 100vh;
 }
-/*overlay pour la lisisibilité*/
+/*overlay pour la lisisibilité du texte*/
 .overlay{
     background: rgba(0,0,0,0.6);
     height: 100%;
@@ -42,7 +22,7 @@ h1, h2, h3, h4, h5{
     text-align:center;
     padding: 20px;
 }
-/*content*/
+/*content, le texte*/
 .histoiry-content{
     color: #fff;
     max-width: 700px;
@@ -83,13 +63,11 @@ h1, h2, h3, h4, h5{
     transition: transform 0.3s;
     box-shadow: 0.3s;
 }
-
-/*animation initiale*/
+/*animation initiale des cartes equipes*/
 .fade-item{
     opacity:0;
     transform: translateY(30px);
     animation: fadeUp 1s ease forwards;
-   
 }
 /*image des cardes*/
 .card img{
@@ -106,28 +84,18 @@ h1, h2, h3, h4, h5{
 .card:hover img{
     transform: scale(1.1);
 }
-/*Bouton*/
-.card .btn{
-    background: var(--accent);
-    border: none;
-    transition: all 0.3s ease;
-}
-.card .btn:hover{
-    background: #a67c3b;
-    transform: scale(1.05);
-}
     /*Animation*/
     @keyframes fadeUp{
-        from{
+        from{ /*le debut de l'animation*/
             opacity: 0;
             transform: translateY(40px);
         }
-        to{
+        to{ /*La fin de l'animation*/
             opacity: 1;
             transform: translate(0);
         }
     }
-/*apparition une à une*/
+/*apparition une à une des cardes de mon équipe*/
 .fade-item:nth-child(1){animation-delay: 0.7s;}
 .fade-item:nth-child(2){animation-delay: 1.2s;}
 .fade-item:nth-child(3){animation-delay: 1.7s;}
@@ -154,13 +122,14 @@ box-shadow: 0 10px 25px rgba(0,0,0,0.2);
     }
 }
 @media (max-width:375px){
-    .equipe .col-lg-3{
+    .equipe .col-lg-3{ /*en colonne pour les larges ecrans*/
          flex: 0 0 100%;
         max-width: 50%;
         margin-bottom: 20px;
     }
 }
 /*sections valeurs*/
+/*disposition,... des cartes contenant nos valeurs*/
 .valeurs .container{
     display: flex;
     flex-wrap: wrap;
@@ -185,10 +154,12 @@ box-shadow: 0 10px 25px rgba(0,0,0,0.2);
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     transition: 0.3s;
 }
+/*quand on survole les cardes*/
 .valeurs .valeur-card:hover{
     transform: translateY(-8px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
+
 .valeurs .valeur-card h3{
     margin-bottom: 15px;
     color: #222;
@@ -198,13 +169,14 @@ box-shadow: 0 10px 25px rgba(0,0,0,0.2);
     color: #555;
 }
 /*section chiffres clés*/
+/*pour la disposition des differentes cartes*/
 #chiffre{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    
 }
-#chi{
+/*pour le contenu des cartes (le chiffre et le texte)*/
+.chi{
     flex: 1;
     flex-wrap: wrap;
     min-height: 150px;
@@ -212,9 +184,9 @@ box-shadow: 0 10px 25px rgba(0,0,0,0.2);
     padding: 20px 40px;
     background: #48151512;
     border-radius: 12px;
-    box-shadow:0 4px 12px rgba(0,0,0,0.8) ;
+    box-shadow:0 4px 12px rgba(0,0,0,0.8);
 }
-/*Responsive*/
+/*Responsive pour les cartes des chiffres clés*/
 @media(max-width:768px){
     #chiffre{
        grid-template-columns:repeat(2, 1fr);
@@ -224,5 +196,4 @@ box-shadow: 0 10px 25px rgba(0,0,0,0.2);
     #chiffre{
        grid-template-columns: 1fr;
     }
-    
 }

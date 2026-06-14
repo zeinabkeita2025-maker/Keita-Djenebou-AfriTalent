@@ -1,77 +1,129 @@
-/* les variables CSS dans root*/
-
-body{
-    background-color: var(--color-light);
+/*la page freelances*/
+body {
+    background-color:var(--light) ;
     font-family: var(--font-main);
     margin-top: 50px;
-    background-color: rgba(255, 255, 255, 0.459)
 }
-
-.btn{
-    background-color: var(--color-primary);
-    border: var(--radius);
+/*le texte d'en haut*/
+/*.free{
+    background-color: #1f2937;
+    color: whitesmoke;
+    border-radius: var(--radius);
+    padding-left: 0;
+    padding-right: 0;
+}*/
+/*style des catégaries avec responsive*/
+.catégories {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
 }
-h1, h2, h3, h4, h5{
-     font-family: var(--font-title);
-     color: black;
+/*qui scroll vers la droite pour voir les autres catégories*/
+.catégories::-webkit-scrollbar {
+    display: none;
 }
-
-.btn{
-    background-color: #d4a017;
-    padding: 10px 10px ;
-    border-radius: 10px;
-}
-.placehorder{
-    color:white;
-}
-.card{
-    text-align: center;
+/*les categories*/
+.filtre {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 24px;
+    background: white;
+    color: #1f2937;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .05);
     transition: 0.3s;
 }
-.card:hover{
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+.filtre:hover {
+    background: #f59e0b;
+    color: white;
+    border-color: #f59e0b;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px rgba(245, 158, 11, .25);
 }
-.catégories{
-   display: flex;
-   flex-direction: row;
-   justify-content: space-around; 
-}
-.filtre{
-    border-radius: 999px;
-    background-color:#E6F1FB;
-    padding: auto;
-}
-/* IMAGE */
+
+/* IMAGE des freelancers */
 .freelance-img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
 }
-
-/* CARD */
+.freelance-img:hover {
+    transform: scale(1.1);
+}
+/* CARD freelances */
 .freelancer-card {
-  border: none;
-  border-radius: 15px;
-  overflow: hidden;
-  background-color: rgba(128, 128, 128, 0.226);
-  transition: 0.3s;
-  color: aliceblue;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #f9f9f956;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+    color: aliceblue;
 }
-
+/*nom des freelancers*/
+.nom {
+    color: black;
+}
 /* HOVER */
 .freelancer-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transition: all 0.3 ease;
 }
-.mt-3 a:hover{
+/*bouton voir profil*/
+.mt-3 a:hover {
     background-color: black;
     color: azure;
 }
-.bl:active{
-    background-color: aliceblue;
+/*filtrage des cartes(enlevement des cartes nn selectionns) */
+.hidden {
+    display: none !important; /* pour que le css s'execute avant les autres class (bootstrap)*/
 }
-
-.hidden{
-    display: none !important;
+/* les offcanvans pour les freelances*/
+/*le cadre du profil voir plus*/
+.profil-canvas {
+    background: #1d2330;
+    color: white;
+    width: 450px;
+}
+/*l'entete */
+.profil-canvas .offcanvas-header {
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+/*l'image des profils*/
+.photo-profil {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+.profil-canvas h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #ffc107;
+}
+.profil-canvas p {
+    color: #d6d6d6;
+    line-height: 1.8;
+    text-align: justify;
+}
+/*Les liens de nos reseaux*/
+.reseaux {
+    margin-top: 10px;
+}
+.reseaux a {
+    color: white;
+    font-size: 1.7rem;
+    margin-right: 20px;
+    transition: .3s;
+}
+.reseaux a:hover {
+    color: #ffc107;
+    transform: translateY(-5px);
 }

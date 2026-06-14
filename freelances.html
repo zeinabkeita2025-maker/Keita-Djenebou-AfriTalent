@@ -1,284 +1,475 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>AfriTalent — freelances</title>
- <!-- Bootstrap 5 via CDN : feuille de style -->
- <link
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-rel="stylesheet">
- <!-- Votre feuille de style personnelle -->
- <link rel="stylesheet" href="css/freelances.css">
- <!--google fonts-->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" >
- <!--icons bootstrap-->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
- <!--variable css dans root-->
- <link rel="stylesheet" href="css/variable.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AfriTalent — freelances</title>
+  <!-- Bootstrap 5 via CDN : feuille de style -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Votre feuille de style personnelle -->
+  <link rel="stylesheet" href="css/freelances.css">
+  <!--google fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <!--icons bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!--CSS commun -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="pt-6"> 
- <!-- Le contenu de la page sera ajoute ici -->
+
+<body class="pt-5">
+  <!-- Le contenu de la page -->
   <header>
-         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
-            <div class="container">
-                <a  class="navbar-brand" href="index.html">
-                     <div class="logo">
-                        <div class="logo-rect">
-                            <span class="logo-a">A</span>
-                        </div>
-                        <span class="logo-text">Afri<span class="logo-texte">Talent</span>
-                       </div>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navMenu">
-            <ul class="navbar-nav ms-auto">
-            <li class="nav-item"> <a class="nav-link" href="index.html">Accueil</a></li>
-            <li class="nav-item"> <a class="nav-link" href="freelances.html">Freelances</a></li>
-            <li class="nav-item"> <a class="nav-link" href="tarifs.html">Tarifs</a></li>
-            <li class="nav-item"> <a class="nav-link" href="blog.html">Blog</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">A propos</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            </ul>
+    <nav class="navbar navbar-expand-lg  fixed-top" id="navbar">
+      <div class="container">
+        <!-- logo AfriTalent-->
+        <a class="navbar-brand" href="index.html">
+          <div class="logo">
+            <div class="logo-rect">
+              <span class="logo-a">A</span>
             </div>
-             <button id="themeToggle">🌙</button>
-             <a href="freelances.html" ><button class="btn btn-outline-light m-2">Rejoindre AfriTalent </button></a>
+            <span class="logo-text">Afri<span class="logo-texte">Talent</span></span>
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+          aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item m-3"> <a class="nav-link" href="index.html">Accueil</a></li>
+            <li class="nav-item m-3"> <a class="nav-link" href="freelances.html">Freelances</a></li>
+            <li class="nav-item m-3"> <a class="nav-link" href="tarifs.html">Tarifs</a></li>
+            <li class="nav-item m-3"> <a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item m-3"><a class="nav-link" href="about.html">A propos</a></li>
+            <li class="nav-item m-3"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <button id="themeToggle">🌙</button>
+        <a href="freelances.html" class="btn btn-outline-light m-3">Rejoindre AfriTalent</a>
+      </div>
+    </nav>
+  </header>
+  <!-- Boutton de Filtrage-->
+  <main>
+    <div class="free">
+      <h1 class="text-center mb-4">Trouvez les meilleurs freelances d'Afrique chez AfriTalent Tech</h1>
+    </div>
+    <div class="catégories">
+      <button class="filtre" data-category="tous"> Toutes Catégories</button>
+      <button class="filtre" data-category="dev"> <i class="bi bi-code-slash"></i>Développement</button> <button
+        class="filtre" data-category="design"> <i class="bi bi-palette"></i>Design</button>
+      <button class="filtre" data-category="marketing"> <i class="bi bi-cloud"></i> Marketing</button>
+      <button class="filtre" data-category="seo expert"> <i class="bi bi-bar-chart"></i> SEO Expert</button>
+      <button class="filtre" data-category="graphiste"> <i class="bi bi-palette"></i>Graphistes</button>
+      <button class="filtre" data-category="data"> <i class=" bi bi-robot"></i> Data Analyst</button>
+    </div>
+    
+    <!--GRID des freelances-->
+    <div class="container my-5 fade">
+      <h2 class="text-center mb-5 fw-bold">Top Freelancers</h2>
+      <div class="row g-4">
+        <!-- CARD 1 -->
+        <div class="col-md-4">
+          <div class="card freelancer-card" data-category="dev">
+            <img class="freelance-img" src="images/istockphoto-2162200873-612x612.jpg" alt="carte1">
+            <div class="card-body text-center">
+              <h3 class="nom">Amina Diallo</h3>
+              <h4 class="text-muted">Développeuse Web</h4>
+              <span class="badge bg-warning text-dark">⭐ 4.9</span>
+              <div class="mt-3">
+                <a href="#" class="btn btn-dark btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop1"
+                  aria-controls="offcanvasTop">Voir profil</a>
+              </div>
             </div>
-        </nav>  
-        </header>
-                <!--FILTRE-->
-                        <!-- <div class="row mb-4">
-                        <div class="col-md-4 mb-2">
-                            <input type="text" id="searchInput"  class="form-control" placeholder="Rechercher">
-                        </div>
-                    <div class="col-md-4 mb-2"> -->
-                        <!-- <select class="" id=""> -->
-                          <div class="catégories">
-                            <button class="filtre" data-category="tous"> Toutes Catégories</button>
-                            <button class="filtre" data-category="dev"> <i class="bi bi-code-slash"></i>Développement</button>
-                            <button class="filtre"data-category="design">Design</button>
-                            <button class="filtre"data-category="marketing">Marketing</button>
-                            <button class="filtre"data-category="seo expert">SEO Expert</button>
-                            <button class="filtre"data-category="graphiste">Graphistes</button>
-                            <button class="filtre"data-category="data">Data Analyst</button >
-                            </div>
-                    <!-- </div>
-                    <div class="col-md-4 mb-2"> -->
-                       <!-- <select class="form-select" id="availabilitySelect">
-                            <option value="all" class="bl"> Toutes Disponibilités</option>
-                            <option  value="available">Disponible</option>
-                            <option  value="busy">Occupé</option>
-                        </select>
-                    </div>
-                        </div>
-                        -->
-                         <!--GRID des freelances-->
-               <div class="container my-5">
-  <h2 class="text-center mb-5 fw-bold">Top Freelancers</h2>
-  <div class="row g-4">
-    <!-- CARD 1 -->
-    <div class="col-md-4">
-      <div class="card freelancer-card" data-category="dev" data-availability="available">
-        <img class="freelance-img" src="images/istockphoto-2162200873-612x612.jpg" alt="Dev">
-        <div class="card-body text-center">
-          <h5>Amina Diallo</h5>
-          <p class="text-muted">Développeuse Web</p>
-          <span class="badge bg-warning text-dark">⭐ 4.9</span>
-          <div class="mt-3">
-            <a href="#" class="btn btn-dark btn-sm">Voir profil</a>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="col-md-4">
+          <div class="card freelancer-card" data-category="design">
+            <img class="freelance-img" src="images/temoin7.jpg" alt="carte2">
+            <div class="card-body text-center">
+              <h3 class="nom">Marie Zounka</h3>
+              <h4 class="text-muted">Designer UI/UX</h4>
+              <span class="badge bg-warning text-dark">⭐ 4.8</span>
+              <div class="mt-3">
+                <a href="#" class="btn btn-dark btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop2"
+                  aria-controls="offcanvasTop">Voir profil</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="col-md-4">
+          <div class="card freelancer-card" data-category="marketing">
+            <img class="freelance-img" src="images/istockphoto-1321462048-612x612.jpg" alt="carte3">
+            <div class="card-body text-center">
+              <h3 class="nom">Fatou Ndiaye</h3>
+              <h4 class="text-muted">Marketing Digital</h4>
+              <span class="badge bg-warning text-dark">⭐ 4.7</span>
+              <div class="mt-3">
+                <a href="#" class="btn btn-dark btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop3"
+                  aria-controls="offcanvasTop">Voir profil</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="col-md-4">
+          <div class="card freelancer-card" data-category="dev">
+            <img class="freelance-img"
+              src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=500&q=80" alt="carte4">
+            <div class="card-body text-center">
+              <h3 class="nom">Oumar Ba</h3>
+              <h4 class="text-muted">Développeur Mobile</h4>
+              <span class="badge bg-warning text-dark">⭐ 4.9</span>
+              <div class="mt-3">
+                <a href="#" class="btn btn-dark btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop4"
+                  aria-controls="offcanvasTop">Voir profil</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="col-md-4">
+          <div class="card freelancer-card" data-category="graphiste">
+            <img class="freelance-img" src="images/temoin8.jpg" alt="carte5">
+            <div class="card-body text-center">
+              <h2 class="nom">Marie Kouyaté</h2>
+              <h3 class="text-muted">Graphiste</h3>
+              <span class="badge bg-warning text-dark">⭐ 4.8</span>
+              <div class="mt-3">
+                <a href="#" class="btn btn-dark btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop5"
+                  aria-controls="offcanvasTop">Voir profil</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 6 -->
+        <div class="col-md-4">
+          <div class="card freelancer-card" data-category="data">
+            <img class="freelance-img"
+              src="https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=500&q=80" alt="">
+            <div class="card-body text-center">
+              <h2 class="nom">Ibrahima Sow</h2>
+              <h3 class="text-muted">Data Analyst</h3>
+              <span class="badge bg-warning text-dark">⭐ 4.7</span>
+              <div class="mt-3">
+                <a href="#" class="btn btn-dark btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop6"
+                  aria-controls="offcanvasTop">Voir profil</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 7 -->
+        <div class="col-md-4">
+          <div class="card freelancer-card" data-category="dev">
+            <img class="freelance-img"
+              src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=500&q=80" alt="">
+            <div class="card-body text-center">
+              <h2 class="nom">Aliou Diop</h2>
+              <h3 class="text-muted">Développeur Backend</h3>
+              <span class="badge bg-warning text-dark">⭐ 4.9</span>
+              <div class="mt-3">
+                <a href="#" class="btn btn-dark btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop7"
+                  aria-controls="offcanvasTop">Voir profil</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 8 -->
+        <div class="col-md-4">
+          <div class="card freelancer-card" data-category="marketing">
+            <img class="freelance-img"
+              src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=500&q=80" alt="carte8">
+            <div class="card-body text-center">
+              <h2 class="nom">Jean Koffi</h2>
+              <h3 class="text-muted">Community Manager</h3>
+              <span class="badge bg-warning text-dark">⭐ 4.8</span>
+              <div class="mt-3">
+                <a href="#" class="btn btn-dark btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop8"
+                  aria-controls="offcanvasTop">Voir profil</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 9 -->
+        <div class="col-md-4">
+          <div class="card freelancer-card" data-category="seo expert">
+            <img class="freelance-img" src="images/temoin.jpg" alt="carte9">
+            <div class="card-body text-center">
+              <h2 class="nom"> Coumba Fall</h2>
+              <h3 class="text-muted">SEO Expert</h3>
+              <span class="badge bg-warning text-dark">⭐ 4.7</span>
+              <div class="mt-3">
+                <a href="#" class="btn btn-dark btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop9"
+                  aria-controls="offcanvasTop">Voir profil</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- CARD 2 -->
-    <div class="col-md-4">
-      <div class="card freelancer-card" data-category="design" data-availability="available">
-        <img class="freelance-img" src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=500&q=80" alt="">
-        <div class="card-body text-center">
-          <h5>Moussa Traoré</h5>
-          <p class="text-muted">Designer UI/UX</p>
-          <span class="badge bg-warning text-dark">⭐ 4.8</span>
-          <div class="mt-3">
-            <a href="#" class="btn btn-dark btn-sm">Voir profil</a>
-          </div>
+  </main>
+  <!--Footer-->
+  <footer class="foot text-white pt-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h3>AfriTalent</h3>
+          <p>Plateforme freelance tech en Afrique</p>
+          <a class="navbar-brand" href="index.html">
+            <div class="logo">
+              <div class="logo-rect">
+                <span class="logo-a">A</span>
+              </div>
+              <span class="logo-text">Afri<span class="logo-texte">Talent</span></span>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <h3>Liens utiles</h3>
+          <ul class="list-unstyled">
+            <li> <a href="index.html">Accueil</a></li>
+            <li> <a href="freelances.html">Freelances</a></li>
+            <li><a href="tarifs.html">Tarifs</a></li>
+            <li><a href="about.html">A propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3>Ressources</h3>
+          <ul class="list-unstyled">
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">Aide</a></li>
+            <li><a href="tarifs.html">FAQ</a></li>
+            <li><a href="freelances.html">Quides freelances</a></li>
+            <li><a href="index.html">politique de confidentialité</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3>Contact</h3>
+          <p> <a href="mailto:Contact@afritalent.com">Contact@afritalent</a></p>
+          <p>📞 +221 77 143 63 75</p>
+          <p>📍Dakar,Sénégal</p>
+        </div>
+      </div>
+      <hr>
+      <div class="foot">
+        <p> <span id="year"> @ AfriTalent-Plateforme freelance tech en Afrique</span>
+        </p>
+        <div class="icon">
+          <a href="http://telegram.org"><i class="bi bi-telegram"></i></a>
+          <a href="http://youtube.com"><i class="bi bi-youtube"></i></a>
+          <a href="http://instagram.com"><i class="bi bi-instagram"></i></a>
         </div>
       </div>
     </div>
+  </footer>
+  <!--bouton retour en haut-->
+  <button id="btnTop">
+    <i class=" bi bi-arrow-up-circle"></i>
+  </button>
 
-    <!-- CARD 3 -->
-    <div class="col-md-4">
-      <div class="card freelancer-card" data-category="marketing" data-availability="busy">
-        <img class="freelance-img" src="images/istockphoto-1321462048-612x612.jpg" alt="">
-        <div class="card-body text-center">
-          <h5>Fatou Ndiaye</h5>
-          <p class="text-muted">Marketing Digital</p>
-          <span class="badge bg-warning text-dark">⭐ 4.7</span>
-          <div class="mt-3">
-            <a href="#" class="btn btn-dark btn-sm">Voir profil</a>
-          </div>
-        </div>
-      </div> 
+  <!-- Bootstrap 5 via CDN : script JavaScript -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+                       <!--les offcanvans de mes cartes freelances-->
+                                <!--Pour le premier profil-->
+  <div class="offcanvas offcanvas-end profil-canvas" tabindex="-1" id="offcanvasTop1" data-bs-backdrop="false">
+
+    <div class="offcanvas-header">
+      <h2 class="offcanvas-title">Amina Diallo</h2>
+          
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas">
+      </button>
     </div>
-
-    <!-- CARD 4 -->
-    <div class="col-md-4">
-      <div class="card freelancer-card" data-category="dev" data-availability="available">
-        <img class="freelance-img" src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=500&q=80" alt="">
-        <div class="card-body text-center">
-          <h5>Oumar Ba</h5>
-          <p class="text-muted">Développeur Mobile</p>
-          <span class="badge bg-warning text-dark">⭐ 4.9</span>
-          <div class="mt-3">
-            <a href="#" class="btn btn-dark btn-sm">Voir profil</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- CARD 5 -->
-    <div class="col-md-4">
-      <div class="card freelancer-card" data-category="graphiste" data-availability="busy">
-        <img class="freelance-img" src="images/temoin8.jpg" alt="">
-        <div class="card-body text-center">
-          <h5>Marie Kouyaté</h5>
-          <p class="text-muted">Graphiste</p>
-          <span class="badge bg-warning text-dark">⭐ 4.8</span>
-          <div class="mt-3">
-            <a href="#" class="btn btn-dark btn-sm">Voir profil</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- CARD 6 -->
-    <div class="col-md-4">
-      <div class="card freelancer-card" data-category="data" data-availability="available">
-        <img class="freelance-img" src="https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=500&q=80" alt="">
-        <div class="card-body text-center">
-          <h5>Ibrahima Sow</h5>
-          <p class="text-muted">Data Analyst</p>
-          <span class="badge bg-warning text-dark">⭐ 4.7</span>
-          <div class="mt-3">
-            <a href="#" class="btn btn-dark btn-sm">Voir profil</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- CARD 7 -->
-    <div class="col-md-4">
-      <div class="card freelancer-card" data-category="dev" data-availability="busy">
-        <img class="freelance-img" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=500&q=80" alt="">
-        <div class="card-body text-center">
-          <h5>Aliou Diop</h5>
-          <p class="text-muted">Développeur Backend</p>
-          <span class="badge bg-warning text-dark">⭐ 4.9</span>
-          <div class="mt-3">
-            <a href="#" class="btn btn-dark btn-sm">Voir profil</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- CARD 8 -->
-    <div class="col-md-4">
-      <div class="card freelancer-card" data-category="marketing" data-availability="busy">
-        <img class="freelance-img" src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=500&q=80" alt="">
-        <div class="card-body text-center">
-          <h5>Jean Koffi</h5>
-          <p class="text-muted">Community Manager</p>
-          <span class="badge bg-warning text-dark">⭐ 4.8</span>
-          <div class="mt-3">
-            <a href="#" class="btn btn-dark btn-sm">Voir profil</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- CARD 9 -->
-    <div class="col-md-4">
-      <div class="card freelancer-card" data-category="seo expert" data-availability="available">
-        <img class="freelance-img" src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=500&q=80" alt="">
-        <div class="card-body text-center">
-          <h5> Coumba Fall</h5>
-          <p class="text-muted">SEO Expert</p>
-          <span class="badge bg-warning text-dark">⭐ 4.7</span>
-          <div class="mt-3">
-            <a href="#" class="btn btn-dark btn-sm">Voir profil</a>
-          </div>
-        </div>
+    <div class="offcanvas-body">
+      <img src="images/istockphoto-2162200873-612x612.jpg" alt="profil1" class="photo-profil">
+      <h3>Développeuse Web</h3>
+      <p>
+        Amina Diallo est une développeuse web passionné, spécialisé dans la création de sites modernes, performants et adaptés ausx besoins des entreprises.
+      </p>
+      <div class="reseaux">
+         <a href="http://telegram.org"><i class="bi bi-telegram"></i></a>
+        <a href="http://youtube.com"><i class="bi bi-youtube"></i></a>
+        <a href="http://instagram.com"><i class="bi bi-instagram"></i></a>
       </div>
     </div>
   </div>
-</div>
-                         <footer class="foot text-white pt-4">
-                          <div class="container">
-                          <div class="row">
-                            <div class="col-md-3">
-                            <h5>AfriTalent</h5>
-                            <p>Plateforme freelance tech en Afrique</p>
-                           <a  class="navbar-brand" href="index.html">
-                       <div class="logo">
-                        <div class="logo-rect">
-                           <span class="logo-a">A</span>
-                        </div>
-                        <span class="logo-text">Afri<span class="logo-texte">Talent</span></span>
-                       </div>
-                         </a>
-                          </div>
-                         <div class="col-md-3">
-                           <h5>Liens utiles</h5>
-                            <ul class="list-unstyled" >
-                            <li> <a href="index.html">Accueil</a></li>
-                             <li> <a href="freelances.html">Freelances</a></li>
-                             <li><a href="tarifs.html">Tarifs</a></li>
-                             <li><a href="about.html">A propos</a></li>
-                             <li><a href="contact.html">Contact</a></li>
-                            </ul>
-                            </div>
-                          <div class="col-md-3">
-                           <h5>Ressources</h5>
-                            <ul class="list-unstyled">                         
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="about.html">Aide</a></li>
-                            <li><a href="tarifs.html">FAQ</a></li>
-                            <li><a href="freelances.html">Quides freelances</a></li>
-                            <li><a href="index.html">politique de confidentialité</a></li>
-                             </ul>
-                         </div>
-                        <div class="col-md-3">
-                           <h5>Contact</h5>
-                           <p> <a href="mailto:Contact@afritalent.com">Contact@afritalent</a></p>
-                             <p>📞 +221 77 143 63 75</p>
-                             <p>📍Dakar,Sénégal</p>      
-                        </div>
-                       </div>
-                            <hr>
-                             <div class="foot">
-                            <p> <span id="year"> @ AfriTalent-Plateforme freelance tech en Afrique</span>
-                                 </p>
-                                 <div class="icon">
-                                    <a href="http:http:telegram.com"><i class="bi bi-telegram"></i></a>
-                                    <a href="http:youtube.com"><i class="bi bi-youtube"></i></a>
-                                    <a href="http:instagram.com"><i class="bi bi-instagram"></i></a>
-                                 </div>
-                                 </div>
-                                 </footer>
-                                 <button id="btnTop"> 
-                                      <i class=" bi bi-arrow-up-circle"></i> 
-                                    </button>
-                        
+                                            <!--pour le second profil-->
+  <div class="offcanvas offcanvas-end profil-canvas" tabindex="-1" id="offcanvasTop2" data-bs-backdrop="false">
+    <div class="offcanvas-header">
+      <h2 class="offcanvas-title">Marie Fiano</h2>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas">
+      </button>
+    </div>
+    <div class="offcanvas-body">
+      <img src="images/temoin7.jpg" alt="profil2" class="photo-profil">
+      <h3>Designer UX/UI</h3>
+      <p>
+        Marie Fiano est une designer spécialisée en UX/UI avec plusieurs
+        années d'expérience dans la conception d'interfaces modernes et
+        intuitives.
+      </p>
+      <div class="reseaux">
+         <a href="http://telegram.org"><i class="bi bi-telegram"></i></a>
+        <a href="http://youtube.com"><i class="bi bi-youtube"></i></a>
+        <a href="http://instagram.com"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+                                              <!--pour le troisième profil-->
+  <div class="offcanvas offcanvas-end profil-canvas" tabindex="-1" id="offcanvasTop3" data-bs-backdrop="false">
+    <div class="offcanvas-header">
+      <h2 class="offcanvas-title">Profil De Fatou Ndiaye</h2>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas">
+      </button>
+    </div>
+    <div class="offcanvas-body">
+      <img src="images/istockphoto-1321462048-612x612.jpg" alt="profil3" class="photo-profil">
+      <h3>Marketing Digital</h3>
+      <p>
+          Fatou Ndiaye, Spécialiste du marketing digital, aidandant les entreprises à développer leur présence en ligne et à atteindre leurs objectifs grace àses strategies efficaces.
+      </p>
+      <div class="reseaux">
+         <a href="http://telegram.org"><i class="bi bi-telegram"></i></a>
+        <a href="http://youtube.com"><i class="bi bi-youtube"></i></a>
+        <a href="http://instagram.com"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+                                            <!--pour le quatrième profil-->
+  <div class="offcanvas offcanvas-end profil-canvas" tabindex="-1" id="offcanvasTop4" data-bs-backdrop="false">
+    <div class="offcanvas-header">
+      <h2 class="offcanvas-title">Profil De Oumar Ba</h2>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas">
+      </button>
+    </div>
+    <div class="offcanvas-body">
+      <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=500&q=80" alt="profil4" class="photo-profil">
+      <h3>Developpeur Mobile</h3>
+      <p>
+          Oumar Ba, Développeur mobile expérimenté, créant des applications fluides et intuitives pour Android et IOS
+      </p>
+      <div class="reseaux">
+         <a href="http://telegram.org"><i class="bi bi-telegram"></i></a>
+        <a href="http://youtube.com"><i class="bi bi-youtube"></i></a>
+        <a href="http://instagram.com"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+                                            <!--pour le cinquième profil-->
+  <div class="offcanvas offcanvas-end profil-canvas" tabindex="-1" id="offcanvasTop5" data-bs-backdrop="false">
+    <div class="offcanvas-header">
+      <h2 class="offcanvas-title">Profil De Noralie Joseph</h2>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas">
+      </button>
+    </div>
+    <div class="offcanvas-body">
+      <img src="images/temoin8.jpg" alt="profil5" class="photo-profil">
+      <h3>Graphiste</h3>
+      <p>
+          Noralie Joseph, Gra^phiste créatif spécialisé dans la conception d'identités visuelles, d'affiches et de contenues attractifs
+      </p>
+      <div class="reseaux">
+        <a href="http://telegram.org"><i class="bi bi-telegram"></i></a>
+        <a href="http://youtube.com"><i class="bi bi-youtube"></i></a>
+        <a href="http://instagram.com"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+                                            <!--pour le sixième profil-->
+  <div class="offcanvas offcanvas-end profil-canvas" tabindex="-1" id="offcanvasTop6" data-bs-backdrop="false">
+    <div class="offcanvas-header">
+      <h2 class="offcanvas-title">Profil De Ibrahima Sow</h2>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas">
+      </button>
+    </div>
+    <div class="offcanvas-body">
+      <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=500&q=80" alt="profil6" class="photo-profil">
+      <h3>Data Analyst</h3>
+      <p>
+          Ibrahima Sow, Expert en anlyse de données, capables de transformer les informations en insights pertinents pour faciliter la prise de décision.
+      </p>
+      <div class="reseaux">
+         <a href="http://telegram.org"><i class="bi bi-telegram"></i></a>
+        <a href="http://youtube.com"><i class="bi bi-youtube"></i></a>
+        <a href="http://instagram.com"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+                                            <!--pour le septième profil-->
+  <div class="offcanvas offcanvas-end profil-canvas" tabindex="-1" id="offcanvasTop7" data-bs-backdrop="false">
+    <div class="offcanvas-header">
+      <h2 class="offcanvas-title">Profil De Aliou Diop</h2>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas">
+      </button>
+    </div>
+    <div class="offcanvas-body">
+      <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=500&q=80" alt="profil7" class="photo-profil">
+      <h3>Développeur Backend</h3>
+      <p>
+        Aliou Diop, Dévéloppeur backend spécialisé dans la conception d'API et la gestion des bases de données et des serveurs.
+      </p>
+      <div class="reseaux">
+         <a href="http://telegram.org"><i class="bi bi-telegram"></i></a>
+        <a href="http://youtube.com"><i class="bi bi-youtube"></i></a>
+        <a href="http://instagram.com"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+                                              <!--pour le huitième profil-->
+  <div class="offcanvas offcanvas-end profil-canvas" tabindex="-1" id="offcanvasTop8" data-bs-backdrop="false">
+    <div class="offcanvas-header">
+      <h2 class="offcanvas-title">Profil De Jean Koffi</h2>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas">
+      </button>
+    </div>
+    <div class="offcanvas-body">
+      <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=500&q=80" alt="profil8" class="photo-profil">
+      <h3>Community Manager</h3>
+      <p>
+          Jean Koffi, Proffessionnel des réseaux sociaux, chargé de développer et d'animer les communautés en ligne des marques.
+      </p>
+      <div class="reseaux">
+         <a href="http://telegram.org"><i class="bi bi-telegram"></i></a>
+        <a href="http://youtube.com"><i class="bi bi-youtube"></i></a>
+        <a href="http://instagram.com"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+                                              <!--pour le troisième profil-->
+  <div class="offcanvas offcanvas-end profil-canvas" tabindex="-1" id="offcanvasTop9" data-bs-backdrop="false">
+    <div class="offcanvas-header">
+      <h2 class="offcanvas-title">Profil De Coumba  Fall</h2>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas">
+      </button>
+    </div>
+    <div class="offcanvas-body">
+      <img src="images/temoin.jpg" alt="profil9" class="photo-profil">
+      <h3>SEO Expert</h3>
+      <p>
+          Coumba Fall, Spécialiste du référencement naturel, aidant les entreprises à ameliorer leur visibilité sur les moteurs de recherche
+      </p>
+      <div class="reseaux">
+         <a href="http://telegram.org"><i class="bi bi-telegram"></i></a>
+        <a href="http://youtube.com"><i class="bi bi-youtube"></i></a>
+        <a href="http://instagram.com"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+  <!-- Mon script JavaScript -->
+  <script src="js/main.js"></script>
+</body>
 
-
-                <!-- Bootstrap 5 via CDN : script JavaScript -->
-
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-             <!-- Votre script JavaScript -->
-   <script src="js/main.js"></script>
-   </body>
-   </html>
-   
+</html>

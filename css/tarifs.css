@@ -3,81 +3,61 @@
 body{
     background-color: whitesmoke;
     font-family: var(--font-main);
-     margin-top: 100px;
 }
-.navbar{
-    background-color: var(--color-primary);
-    padding: var(--spacing-md);
-    position: sticky;   /*pour que ma navbar reste fixe*/
-    top: 0 ;
-}
-.btn{
-    background-color: var(--color-primary);
-    border: var(--radius);
-}
-h1, h2, h3, h4, h5{
-    margin-top: 20px;
-     font-family: var(--font-title);
-}
+/*espacement de la page (contenu)*/
 .html,body{
     height: 100%;
-    margin: 0;
-}
-main{
-    flex: 1;
-}
+    margin-top: 50px;
+} 
+/*disposition des tarifs */
 .pricing{
     margin-top: 30px;
     display: flex;
     gap: 20px;
     justify-content: center;
 }
+/* sous titre faq en accordion*/
 .text-center{
     margin-bottom: 20px;
     margin-top: 30px;
-    color:#1c1c1c;
+    color:black;
 }
+/*les cartes tarifs*/
 .card{
     border: 1px solid #ccc;
     padding: 20px;
     width: 250px;
     text-align: center;
     border-radius:10px;
+    background-color: rgb(236, 232, 227);
 }
-.popular{
-    border: 2px solid #007bff;
-    transform: scale(1.05);
-}
+/*badge populaire*/
 .badge{
-    background: linear-gradient(115deg,  rgba(0,0, 0, 0.15), rgba(0,40,80,0.6));;
+    background: linear-gradient(115deg,  rgba(0,0, 0, 0.15), rgba(0,40,80,0.6));
     color: black;
     padding: 5px;
     border-radius: 5px;
+    transform: scale(1.05);
 }
-button{
-    background:linear-gradient(to right,#d4a017,#f5e6c8);
-}
-ul{
-    list-style: none;
-}
-.mb-4{
-    color:white;
-}
+/*les boutons questions-reponses */
 .accordion-item{
-    background-color: #1c1c1c ; border:1px solid #333;
+    background-color: #1c1c1c ;
+     border:1px solid #333;
 }
+/* bouton questions*/
 .accordion-button{
     background-color: #333;
     color: white;
     font-weight: bold;
 }
-.accordion-collapse{
-    color: #fff;
-}
+/*bouton reponses*/
 .accordion-body{
 color: #fff;
 }
-footer{
-    margin-top: 0;
-    margin-bottom: 0;
+ul{
+    list-style: none;
+}
+/*la section fAQ*/
+#FAQ{
+    background: linear-gradient(115deg,  rgba(0,0, 0, 0.15), rgba(0,40,80,0.6));
 }
