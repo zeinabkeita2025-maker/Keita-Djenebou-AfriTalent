@@ -13,12 +13,12 @@ h1, h2, h3, h4, h5{
 }
 /*section*/
 .hero{
-    background-image:url('../images/images70.jpg') ;
+    background: linear-gradient(90deg, rgba(8,16,31,.72) 0%, rgba(8,16,31,.50) 35%, rgba(8,16,31,.20) 100%),url('../images/images70.jpg') ;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -26,10 +26,16 @@ h1, h2, h3, h4, h5{
     color: aliceblue;
     transition: background-image 1s ease;
     opacity: 1;
-    animation: zoom 10s infinite alternate; /*Zoomer en permanance*/
+    /*animation: zoom 10s infinite alternate; Zoomer en permanance*/
     transition: background-image 1s ease-in-out;
 }
-/**/
+/*effet supperposé sur le bg*/
+.overlay {
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(2px);
+}
+/*effet Zom pour la section hero (bg-img)*/
 @keyframes zoom{
     from{
         background-size: 100%;
@@ -105,7 +111,7 @@ h1, h2, h3, h4, h5{
     margin-top: 10px;
     font-size: 20px;
 }
-#card:hover{
+#carde:hover{
     transform: translateY(-5px);
     transition: 0.5s;
 }
@@ -281,6 +287,7 @@ h1, h2, h3, h4, h5{
     align-items: center;
     justify-content: center;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 .content h3{
     margin-bottom: 10px;
@@ -422,9 +429,74 @@ display: flex;
     transition: 0.3s;
     border-end-start-radius: 20px;
 }
+/*responsive pour hero*/
+@media (max-width: 375px) {
+    .hero-content h1{
+        font-size: 28px;
+    }
+    .hero-content h2{
+        font-size: 16px;
+    }
+    .Afrique img{
+        max-width: 200px;
+    }
+}
 
-/*responsive pour les cards comment ca marche*/
-/*Tablette*/
+/*statistiques et images*/
+@media (max-width: 768px){
+    .stats-container{
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+    .stats,
+    .image-box{
+        flex: 0 0 100%;
+        width: 100%;
+    }
+    .image-box img{
+        height: 250px;
+    }
+    .stats h2{
+        font-size: 26px;
+    }
+    .stats p{
+        font-size: 16px;
+    }
+    .carde{
+        padding: 20px;
+    }
+}
+@media (max-width: 768px){
+    .hero{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        padding: 120px 20px 50px;
+        min-height: auto;
+    }
+    .hero-content{
+        max-width: 100%;
+    }
+    .hero-content h1{
+        font-size: 36px;
+    }
+    .hero-content h2{
+        font-size: 18px;
+    }
+    .Afrique img{
+        display: none;
+    }
+    .hero-content .btn{
+        display: block;
+        width: 100%;
+        max-width: 300px;
+        margin: 10px auto;
+    }
+}
+
+/*Tablette responsive des grids*/
 @media (max-width:768px){
     .grid-cards{
         grid-template-columns: 1fr;

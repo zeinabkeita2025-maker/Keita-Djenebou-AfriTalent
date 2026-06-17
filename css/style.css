@@ -11,11 +11,13 @@
         --spacing-md: 10px;
         --radius: 1.5rem;
     }
+
     /*pour tous les liens */
-    a{
+    a {
         text-decoration: none;
         color: white;
     }
+
     /*La navbar*/
     .navbar {
         padding: var(--spacing-md);
@@ -24,33 +26,44 @@
         top: 0;
         transition: 0.3s;
     }
+
     /*pour tous les contenus de ma page*/
     html,
     body {
-        padding-top: 40px;
-        overflow-x: hidden; /*pour eviter le debordement horizontal*/
+        padding-top: 20px;
+        overflow-x: hidden;
+        /*pour eviter le debordement horizontal*/
     }
-   /* section {
+
+    /* section {
         background-color: var(--light);
     }*/
-    h1,h2,h3,h4,h5 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
         font-family: var(--font-title);
         color: var(--white-color);
     }
+
     /*pour le contenu de toutes les balises*/
     .container * {
         transition: 0.3s;
     }
+
     /*pour toutes les balises p*/
     p {
         font-family: var(--font-main);
     }
+
     /* pour toutes les balises html*/
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
+
     /*logo commun pour toutes les pages*/
     /*container du logo*/
     .logo {
@@ -58,6 +71,7 @@
         align-items: center;
         font-family: 'Montserrat', Arial, sans serif;
     }
+
     /*Rectangle jaune pour le A*/
     .logo-rect {
         width: 50px;
@@ -69,33 +83,39 @@
         justify-content: center;
         margin-right: 10px;
     }
+
     /*A dans le rectangle*/
     .logo-a {
         color: white;
         font-weight: bold;
         font-size: 28px;
     }
+
     /*text Afritalent*/
     .logo-text {
         color: white;
         font-weight: 600;
         font-size: 20px;
     }
+
     /*couleur de "Talent" dans le logo*/
     .logo-texte {
         color: var(--cta);
     }
+
     /*les liens nav*/
     .nav-link {
         position: relative;
         transition: 0.3s;
         color: white
     }
+
     .nav-link:hover {
         color: aliceblue;
         border-radius: 80px;
         background-color: var(--accent);
     }
+
     .btn {
         background-color: var(--cta);
         color: #0d1b2a;
@@ -104,9 +124,11 @@
         border: none;
         margin-right: 5px;
     }
+
     .btn:hover {
-        background-color:whitesmoke;
+        background-color: whitesmoke;
     }
+
     /*Animation css pour les cardes*/
     /*footer espacement entre le copryth et les liens*/
     .foot {
@@ -115,37 +137,101 @@
         justify-content: space-between;
         margin-bottom: 0;
     }
+
     /*espace entre les icons*/
     .icon {
         gap: 15px;
     }
+
     /*Pour les images*/
     .img {
         max-width: 100%;
         height: auto;
     }
+
     /*Responsive pour les cartes*/
     /*Mobile*/
-    @media(min-width:375px) {
-        .cards {
+    @media (min-width:375px) {
+        .card {
             display: flex;
             flex-direction: column;
+            margin-bottom: 30px;
+        }
+
+        /*Pour la navbar*/
+        .navbar .btn-outline-light {
+            display: none;
+        }
+
+        /* responsive de la section hero;*/
+
+        /*cartes statistiques et images*/
+        /*Deplace le bouton retour en haut*/
+        #btnTop {
+            bottom: 15px;
+            right: 15px;
+            width: 45px;
+            height: 45px;
+            z-index: 999;
         }
     }
 
     /*tablette*/
-    @media(min-width:768px) {
+    @media (max-width:768px) {
         .cards {
-            flex-direction: row;
+            flex-direction: column;
             flex-wrap: wrap;
+            margin-bottom: 50px;
         }
     }
 
     /*Desktop*/
-    @media(min-width:1200px) {
+    @media (max-width:1200px) {
         .container {
             max-width: 1100px;
             margin: auto;
+        }
+    }
+
+    /*Footer css et responsive*/
+    .footer-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 15px 0;
+    }
+
+    .icon {
+        display: flex;
+        gap: 15px;
+    }
+    .icon a {
+        color: white;
+        font-size: 24px;
+        transition: 0.3s;
+    }
+    .icon a:hover {
+        color: #c89b3c;
+    }
+
+    @media (max-width: 768px) {
+
+        footer {
+            text-align: center;
+        }
+
+        .footer-bottom {
+            flex-direction: column;
+        }
+
+        .icon {
+            justify-content: center;
+        }
+
+        footer .col-md-3 {
+            margin-bottom: 30px;
         }
     }
 
@@ -176,9 +262,11 @@
         align-items: center;
         gap: 8px;
     }
+
     body.dark .contact-box {
-        background:linear-gradient(115deg, #2C3E50, #34495e);
+        background: linear-gradient(115deg, #2C3E50, #34495e);
     }
+
     #themeToggle:active {
         transform: scale(0.96);
     }
@@ -186,12 +274,14 @@
     body.dark #themeToggle {
         background: linear-gradient(115deg, #2C3E50, #34495e);
     }
+
     /*pour la navbar au scroll*/
     .navbar.scrolled {
         background: linear-gradient(115deg, rgba(0, 0, 0, 0.15), rgba(0, 40, 80, 0.6));
         padding: 8px;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     }
+
     /*button retour en haut*/
     #btnTop {
         position: fixed;
@@ -212,6 +302,7 @@
         background-color: #f4b400;
         color: black;
     }
+
     /*css pour la section fondu*/
     .fade {
         opacity: 0;
@@ -220,19 +311,21 @@
             transform 0.8s ease;
         filter: blur(5px);
     }
+
     /*css pour js*/
     .fade.show {
         opacity: 1;
         transform: translateY(0);
         filter: blur(0);
     }
+
     /*couleur du footer*/
     .foot {
         background-color: var(--color-primary);
     }
+
     /* la selection*/
     ::selection {
         color: black;
         background-color: orange;
     }
-    

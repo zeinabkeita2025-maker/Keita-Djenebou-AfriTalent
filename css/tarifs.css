@@ -11,10 +11,11 @@ body{
 } 
 /*disposition des tarifs */
 .pricing{
-    margin-top: 30px;
     display: flex;
-    gap: 20px;
     justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
 }
 /* sous titre faq en accordion*/
 .text-center{
@@ -26,10 +27,11 @@ body{
 .card{
     border: 1px solid #ccc;
     padding: 20px;
-    width: 250px;
     text-align: center;
     border-radius:10px;
     background-color: rgb(236, 232, 227);
+    width: 300px;
+    max-width: 100%;
 }
 /*badge populaire*/
 .badge{
